@@ -636,12 +636,8 @@
       "photo" : "/images/people/wisdomanthoni.jpg",
       "photoUrl" : "https://pbs.twimg.com/profile_images/906989089911648259/8rZ-G_ZH_400x400.jpg",
       "socials" : [ {
-        "icon" : "gplus",
-        "link" : "#",
-        "name" : "Google+"
-      }, {
         "icon": "twitter",
-        "link": "#",
+        "link": "https://twitter.com/wisdomanthoni",
         "name": "Twitter"
       },{
         "icon" : "facebook",
