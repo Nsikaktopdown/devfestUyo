@@ -105,13 +105,13 @@
     "callToAction": {
       "featuredSessions": {
         "description": "GDG DevFest South South brings together the world class experts in Android, Web and Cloud technologies to Uyo for a 1 day of sessions, workshops and showcases.",
-        "label": "Explore featured session",
-        "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
+        "label": "Learn More",
+        "link": "#"
       },
       "howItWas": {
-        "description": "Described by many as 'Google I/O of Uyo', our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
+        "description": "Described by many as 'Google I/O of Aba', our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
         "label": "See how it was in 2017",
-        "youtubeId": "TdpbgRgz6eE"
+        "youtubeId": "#"
       }
     },
     "statisticsBlock": {
@@ -246,7 +246,7 @@
     }
   },
   "aboutOrganizerBlock": {
-    "image": "/images/team.jpg",
+    "image": "/images/team.jpeg",
     "blocks": [
       {
         "title": "Organizer",

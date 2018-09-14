@@ -29,11 +29,6 @@
       "label": "Speakers"
     },
     {
-      "route": "schedule",
-      "permalink": "/schedule/",
-      "label": "Schedule"
-    },
-    {
       "route": "team",
       "permalink": "/team/",
       "label": "Team"
@@ -113,14 +108,14 @@
   },
   "location": {
     "label": "Location",
-    "name": "Start Innovation Hub",
+    "name": "Emerald Event Center",
     "city": "Uyo",
     "short": "Akwa-Ibom, Nigeria",
-    "address": "Start Innovation Hub suite G11 ground floor Ibom e-library,Uyo",
+    "address": "Emerald Event Center, General Edet Akpan Ave, Uyo",
     "pointer": {
-      "latitude": 5.015090,
-      "longitude": 7.913266,
-      "zoom": 9
+      "latitude": 5.0106246,
+      "longitude": 7.9510438,
+      "zoom": 10
     },
     "mapCenter": {
       "latitude": 5.03,
