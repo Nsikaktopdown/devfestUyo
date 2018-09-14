@@ -3,7 +3,7 @@
   "description": "Be a hero. Be a GDG!",
   "image": "images/social-share.jpg",
   "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev, south",
-  "dates": "October 12-13, 2018",
+  "dates": "November 16, 2018",
   "partnershipProposition": "#",
   "share": "Share",
   "followOur": "Follow our",
@@ -56,17 +56,17 @@
       "title": "Explore Past DevFests",
       "links": [
         {
-          "name": "DFSS 2015",
+          "name": "DFSE 2015",
           "url": "#",
           "newTab": true
         },
         {
-          "name": "DFSS 2016",
+          "name": "DFSE 2016",
           "url": "#",
           "newTab": true
         },
         {
-          "name": "DFSS 2017",
+          "name": "DFSE 2017",
           "url": "#",
           "newTab": true
         }
@@ -152,10 +152,10 @@
     "toast": "We will contact you soon!"
   },
   "featuredVideos": {
-    "title": "DFSS'16 featured videos",
+    "title": "DevFest's South & East featured videos",
     "callToAction": {
-      "label": "See videos",
-      "link": "https://www.youtube.com/watch?v=L0uT3HlDbZA"
+      "label": "",
+      "link": ""
     }
   },
   "blog": {
@@ -189,11 +189,11 @@
     }
   },
   "galleryBlock": {
-    "title": "#dfua16 highlights",
+    "title": "#dfse17 highlights",
     "description": "This year's festival built lots of excitement. Check out photos from featured talks, hands-on learning sessions, and after-hours fun.",
     "callToAction": {
       "label": "See all photos",
-      "link": "https://goo.gl/photos/H8s3CtPexCzkLqSt9"
+      "link": "https://photos.app.goo.gl/Y1aGMSbHffHhHGuU2"
     }
   },
   "mapBlock": {
@@ -208,7 +208,7 @@
     "emailAddress": "Email Address",
     "firstName": "First Name",
     "lastName": "Last Name",
-    "formTitle": "Get the latest updates, insights and news about GDG DevFest Ukraine sent to your inbox.",
+    "formTitle": "Get the latest updates, insights and news about GDG DevFest South South sent to your inbox.",
     "emailRequired": "Please enter a valid email address.",
     "subscribe": "Subscribe",
     "subscribed": "Subscribed",
@@ -217,7 +217,7 @@
     "toast": "Successfully subscribed!"
   },
   "team": {
-    "description": "Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.<br><br> [Google Developers Group (GDG) Uyo](https://www.meetup.com/GDG-Uyo/) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion.<br><br> Our goal is to organize space to connect the best industry experts with Ukrainian audience to boost development of IT."
+    "description": "Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.<br><br> [Google Developers Group (GDG) Uyo](https://www.meetup.com/GDG-Uyo/) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion.<br><br> Our goal is to organize space to connect the best industry experts with South South Nigeria audience to boost development of IT."
   },
   "schedule": {
     "saveSessionsSignedOut": "Sign in to save sessions"

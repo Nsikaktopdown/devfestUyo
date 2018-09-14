@@ -6,7 +6,7 @@
     "url": "meetup.com/GDG-Uyo/"
   },
   "startDate": "2018-11-016T10:00:00+03:00",
-  "endDate": "2018-11-17T19:00:00+04:00",
+  "endDate": "2018-11-16T19:00:00+04:00",
   "webapp": {
     "shortName": "DevFestSS",
     "themeColor": "#3F51B5",
@@ -120,7 +120,7 @@
     "pointer": {
       "latitude": 5.015090,
       "longitude": 7.913266,
-      "zoom": 5
+      "zoom": 9
     },
     "mapCenter": {
       "latitude": 5.03,
@@ -180,8 +180,8 @@
   },
   "mailto": "hello@devfestss.tech",
   "mailchimp": {
-    "url": "https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe",
-    "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
+    "url": "",
+    "name": ""
   },
   "signInProviders": {
     "providersData": [
@@ -221,7 +221,7 @@
       "itemsCount": 6
     },
     "tickets": {
-      "itemsCount": 0
+      "itemsCount": 4
     }
   }
 }
