@@ -56,6 +56,16 @@
       "title": "Explore Past DevFests",
       "links": [
         {
+          "name": "DFSS 2015",
+          "url": "#",
+          "newTab": true
+        },
+        {
+          "name": "DFSS 2016",
+          "url": "#",
+          "newTab": true
+        },
+        {
           "name": "DFSS 2017",
           "url": "#",
           "newTab": true
