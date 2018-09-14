@@ -11,7 +11,7 @@
   "emailUs": "Email us",
   "partnershipResources": "Partnership Resources",
   "eventResources": "Event Resources",
-  "buyTicket": "Register Event",
+  "buyTicket": "Get A Ticket",
   "signIn": "Sign in",
   "signOut": "Sign out",
   "viewHighlights": "View Highlights",
@@ -94,7 +94,7 @@
     "title": "What you need to know, before you ask.",
     "callToAction": {
       "featuredSessions": {
-        "description": "GDG DevFest Ukraine brings together the world class experts in Android, Web and Cloud technologies to Lviv for 2 days of sessions, workshops and showcases.",
+        "description": "GDG DevFest South South brings together the world class experts in Android, Web and Cloud technologies to Uyo for a 1 day of sessions, workshops and showcases.",
         "label": "Explore featured session",
         "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
       },
@@ -107,15 +107,15 @@
     "statisticsBlock": {
       "attendees": {
         "label": "Attendees",
-        "number": "900"
+        "number": "1000"
       },
       "days": {
         "label": "Days",
-        "number": "2"
+        "number": "1"
       },
       "sessions": {
         "label": "Sessions",
-        "number": "50"
+        "number": "20"
       },
       "tracks": {
         "label": "Tracks",
@@ -142,10 +142,10 @@
     "toast": "We will contact you soon!"
   },
   "featuredVideos": {
-    "title": "DFSS'17 featured videos",
+    "title": "DFSS'16 featured videos",
     "callToAction": {
-      "label": "See all videos",
-      "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
+      "label": "See videos",
+      "link": "https://www.youtube.com/watch?v=L0uT3HlDbZA"
     }
   },
   "blog": {
@@ -165,7 +165,7 @@
     "previousYear": "Year"
   },
   "speakersBlock": {
-    "title": "Rockstar speakers",
+    "title": "Meet the speakers",
     "callToAction": {
       "label": "View all speakers",
       "link": "/speakers/"
@@ -240,7 +240,7 @@
     "blocks": [
       {
         "title": "Organizer",
-        "description": "<a href='http://lviv.gdg.org.ua' target='_blank'>GDG Lviv</a> with support of 10 GDGs from all around Ukraine is proud organizer of DevFest Ukraine",
+        "description": "<a href='https://www.meetup.com/GDG-Uyo/' target='_blank'>GDG Uyo</a> with support of 4 GDGs from all around South South Nigeria is proud organizer of DevFest SouthSouth",
         "callToAction": {
           "label": "Open team page",
           "link": "/team"
