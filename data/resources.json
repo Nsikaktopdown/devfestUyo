@@ -4,7 +4,7 @@
   "image": "images/social-share.jpg",
   "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev, south",
   "dates": "October 12-13, 2018",
-  "partnershipProposition": "https://bit.ly/dfua17-partners",
+  "partnershipProposition": "#",
   "share": "Share",
   "followOur": "Follow our",
   "followUs": "Follow us",
@@ -37,7 +37,7 @@
       "links": [
         {
           "name": "GDG Uyo",
-          "url": "http://lviv.gdg.org.ua/",
+          "url": "https://www.meetup.com/GDG-Uyo",
           "newTab": true
         },
         {
@@ -47,7 +47,7 @@
         },
         {
           "name": "Meet the Team",
-          "url": "https://devfest.gdg.org.ua/team/",
+          "url": "https://devfestss.tech/team/",
           "newTab": true
         }
       ]
@@ -56,11 +56,6 @@
       "title": "Explore Past DevFests",
       "links": [
         {
-          "name": "DFSS 2016",
-          "url": "#",
-          "newTab": true
-        },
-        {
           "name": "DFSS 2017",
           "url": "#",
           "newTab": true
@@ -68,23 +63,18 @@
       ]
     },
     {
-      "title": "Event Resources",
+      "title": "Contacts",
       "links": [
         {
-          "name": "Partnership Proposition",
-          "url": "#",
+          "name": "hello@devfestss.tech",
+          "url": "mailto:hellodevfestss.tech",
           "newTab": true
-        },
-        {
-          "name": "Info Partnership Proposition",
-          "url": "#",
-          "newTab": true
-        },
-        {
-          "name": "Media Kit",
-          "url": "#",
-          "newTab": true
-        },
+        }
+      ]
+    },
+    {
+      "title": "Event Resources",
+      "links": [
         {
           "name": "Call for Papers",
           "url": "https://drive.google.com/open?id=10tPuu_7ASM8C70SotqRqIW5Uzos9BzALilMMQPg_JvA",
