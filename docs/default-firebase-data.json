@@ -527,7 +527,7 @@
       "company" : "Google",
       "companyLogo" : "/images/logos/google.svg",
       "companyLogoUrl" : "",
-      "country" : "Nigeria",
+      "country" : "Lagos, Nigeria",
       "featured" : true,
       "name" : "Aniedi Udo-Obong",
       "photo" : "/images/people/aniediudo.jpg",
@@ -618,6 +618,26 @@
         }
       ],
       "title": "Deep learning enthusiast"
+    },
+    "belvi": {
+      "bio": "Software Developer | Open Sourcerer | Expert @CodementorIO @hackhands | Mobile Engineer @tryintelia",
+      "company": "Intelia",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": false,
+      "name": "Belvi Nosakhare",
+      "photo": "/images/people/belvi.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fbelvi.png?alt=media&token=008f3d6d-9f9f-49ac-a39f-7f8573930d23",
+      "shortBio": "Software Developer | Open Sourcerer",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/Kingsmentor",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Software Developer"
     }
   },
   "team" : [ {

@@ -246,7 +246,7 @@
     }
   },
   "aboutOrganizerBlock": {
-    "image": "/images/team.jpeg",
+    "image": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FGDG_4794.jpg?alt=media&token=b1b129cf-7465-49df-bd10-de8c5ab5cf7f",
     "blocks": [
       {
         "title": "Organizer",
