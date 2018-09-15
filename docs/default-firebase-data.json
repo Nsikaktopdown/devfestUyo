@@ -686,25 +686,7 @@
         "name" : "Twitter"
       } ],
       "title" : "Google Country Mentor"
-    }, {
-      "name" : "Aniedi Udo-Obong",
-      "photo" : "/images/people/aniediudo.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Faniediudo.jpg?alt=media&token=4f0cbf2e-3372-4c2f-b0e5-68b00e719442",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://plus.google.com/+aniediudo",
-        "name" : "Google+"
-      }, {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/aniediudo",
-        "name" : "Twitter"
-      }, {
-        "icon" : "website",
-        "link" : "https://medium.com/@aniediudo",
-        "name" : "Website"
-      } ],
-      "title" : "Product Manager"
-    } ],
+    }],
     "title" : "Program Committee"
   } ],
   "tickets" : [  {
