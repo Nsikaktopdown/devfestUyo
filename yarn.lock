@@ -4022,7 +4022,7 @@ eslint-plugin-html@^3.1.1:
     htmlparser2 "^3.8.2"
     semver "^5.4.1"
 
-eslint-plugin-html@^4.0.1:
+eslint-plugin-html@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-4.0.5.tgz#e8ec7e16485124460f3bff312016feb0a54d9659"
   dependencies:
@@ -7400,6 +7400,10 @@ node-pre-gyp@^0.10.0:
 node-status-codes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/node-status-codes/-/node-status-codes-1.0.0.tgz#5ae5541d024645d32a58fcddc9ceecea7ae3ac2f"
+
+nodemailer@^4.6.8:
+  version "4.6.8"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-4.6.8.tgz#f82fb407828bf2e76d92acc34b823d83e774f89c"
 
 nopt@^4.0.1:
   version "4.0.1"

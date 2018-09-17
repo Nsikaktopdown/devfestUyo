@@ -881,3 +881,8 @@ const helperActions = {
   },
 };
 
+const ticketActions = {
+  subscribe: (data) => (dispatch) => {
+    const id = data.email.replace(/[^\w\s]/gi, '');
+  },
+};

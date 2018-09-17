@@ -192,6 +192,7 @@
                     },
                     ref: '' + Math.floor((Math.random() * 1000000000) + 1), 
                     callback: function (response) {
+                     dialogsActions.closeDialog(DIALOGS.TICKET);
                      alert('successfully subscribed. transaction ref is ' + response.reference);
                     }, 
                     onClose: function () {
