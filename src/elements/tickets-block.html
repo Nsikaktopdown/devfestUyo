@@ -236,7 +236,9 @@
 
       _onTicketTap(e) {
         if (e.model.ticket.available) {
-            dialogsActions.openDialog(DIALOGS.TICKET);
+            dialogsActions.openDialog(DIALOGS.TICKET, {
+             amount: e.model.ticket.price,
+          });
         }
       }
 

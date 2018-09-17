@@ -147,7 +147,7 @@ function build() {
 function lint() {
   return gulp.src([
     `scripts/**/*.js`,
-    `src/**/*.{html,js}`,
+    `src/**/*.js`,
     'index.html',
   ])
     .pipe(eslint())

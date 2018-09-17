@@ -71,16 +71,17 @@
                 <paper-button class="close-button" on-tap="_closeDialog">{$ ticketDialog.close $}
                 </paper-button>
 
-                <paper-button on-tap="_subscribe" ga-on="click" ga-event-category="attendees" ga-event-action="subscribe"
+                <paper-button on-tap="_register" ga-on="click" ga-event-category="attendees" ga-event-action="subscribe"
                     ga-event-label="subscribe block" primary>
                     [[submitLabel]]
                 </paper-button>
             </div>
-
         </div>
 
 
     </template>
+    
+    <script src="https://js.paystack.co/v1/inline.js"></script>
 
     <script>
 
@@ -161,6 +162,7 @@
                 this.submitLabel = ' {$ ticketDialog.submitLabel $}';
                 this.firstFieldLabel = '{$ ticketDialog.firstName $}';
                 this.secondFieldLabel = '{$ ticketDialog.lastName $}';
+                this.amount = data.amount;
                 this._prefillFields(data);
             }
 
@@ -172,11 +174,36 @@
                     return;
                 }
 
-                this.data.submit({
+                var handler = PaystackPop.setup({
+                    key: 'pk_test_35289156a9d2cfc55b1e66c5c17b38dcc7240bc7',
                     email: this.email,
-                    firstFieldValue: this.firstFieldValue,
-                    secondFieldValue: this.secondFieldValue,
+                    amount: this.amount * 100,
+                    firstname: this.firstFieldValue,
+                    lastname: this.secondFieldValue,
+                    plan: '',
+                    metadata: {
+                        custom_fields: [
+                            {
+                                display_name: 'Mobile Number',
+                                variable_name: 'mobile_number',
+                                value: '+2348012345678',
+                            }
+                        ]
+                    },
+                    ref: '' + Math.floor((Math.random() * 1000000000) + 1), 
+                    callback: function (response) {
+                     alert('successfully subscribed. transaction ref is ' + response.reference);
+                    }, 
+                    onClose: function () {
+                        alert('window closed');
+                    }
                 });
+                handler.openIframe();
+                // this.data.submit({
+                // email: this.email,
+                // firstFieldValue: this.firstFieldValue,
+                // secondFieldValue: this.secondFieldValue,
+                // });
             }
 
             _validateEmail(email) {

@@ -1,6 +1,5 @@
 {
   "extends": [
-    "eslint:recommended",
     "google",
     "plugin:polymer/polymer-2"
   ],
