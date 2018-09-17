@@ -166,8 +166,7 @@
 
           <a
             class="buy-ticket"
-            href$="[[tickets.url]]"
-            target="_blank"
+            href$="#ticket"
             rel="noopener noreferrer"
             ga-on="click"
             ga-event-category="ticket button"
@@ -291,6 +290,13 @@
       with-backdrop
       no-cancel-on-outside-click="[[viewport.isPhone]]">
     </subscribe-dialog>
+
+    <ticket-dialog 
+       opened="[[dialogs.ticket.isOpened]]" 
+       data="[[dialogs.ticket.data]]"
+       with-backdrop
+       no-cancel-on-outside-click="[[viewport.isPhone]]">
+    </ticket-dialog>
 
     <signin-dialog
       opened="[[dialogs.signin.isOpened]]"

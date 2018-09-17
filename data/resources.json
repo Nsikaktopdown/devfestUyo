@@ -140,6 +140,21 @@
     "notAvailableYet": "Not available yet",
     "save": "Save ${discount}% today"
   },
+  "ticketDialog": {
+    "title": "Tickets",
+    "formTitle": "Register for GDG DevFest South South",
+    "ticketsDetails": "Tickets grant access to all conference sections, coffee breaks, lunch and party. Accommodation is NOT included in the ticket price.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "yourEmail": "Your email",
+    "emailAddress": "Email Address",
+    "emailRequired": "Please enter a valid email address.",
+    "close": "Close",
+    "registered": "Registered",
+    "submitLabel": "Get a Ticket",
+    "generalError": "Some error has occured. Please, try again later.",
+    "toast": "Successfully registered for event!"
+  },
   "partnersBlock": {
     "title": "Partners",
     "button": "Become a partner",

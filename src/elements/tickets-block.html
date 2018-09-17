@@ -142,13 +142,10 @@
         hidden$="[[contentLoaderVisibility]]">
       </content-loader>
 
-      <div class="tickets" layout horizontal wrap center-justified>
+      <div id="ticket" class="tickets" layout horizontal wrap center-justified>
         <template is="dom-repeat" items="[[tickets]]" as="ticket">
           <a
             class="ticket-item card"
-            href$="[[ticket.url]]"
-            target="_blank"
-            rel="noopener noreferrer"
             sold-out$="[[ticket.soldOut]]"
             in-demand$="[[ticket.inDemand]]"
             on-tap="_onTicketTap"
@@ -156,7 +153,6 @@
             ga-event-category="ticket"
             ga-event-action="buy_click"
             ga-event-label$="[[ticket.name]]"
-            layout vertical
           >
             <div class="header">
               <h4>[[ticket.name]]</h4>
@@ -239,10 +235,13 @@
       }
 
       _onTicketTap(e) {
-        if (e.model.ticket.soldOut || !e.model.ticket.available) {
-          e.preventDefault();
-          e.stopPropagation();
+        if (e.model.ticket.available) {
+            dialogsActions.openDialog(DIALOGS.TICKET);
         }
+      }
+
+      _registerAction(data) {
+        // this.dispatch(subscribeActions.subscribe(data));
       }
 
       _getButtonText(available) {

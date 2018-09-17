@@ -546,20 +546,12 @@
     "currency": "₦",
     "ends": "Nov 01",
     "inDemand": true,
-    "info": "Get Branded Jotter Requires valid student ID",
+    "info": "Get Branded Jotter",
     "name": "STUDENT",
     "price": "500",
     "soldOut": false,
     "starts": "Sep 15",
     "url": "/ticket/student"
-  },{
-    "available": true,
-    "currency": "₦",
-    "info": "Money worth nothing when you love it ... Get Branded T-shirts",
-    "name": "I Love DFSS",
-    "price": "2000",
-    "soldOut": false,
-    "url": "/ticket/love-dfss"
   }, {
     "available": true,
     "currency": "₦",
@@ -573,6 +565,15 @@
     "soldOut": false,
     "starts": "Sep 15",
     "url": "/ticket/regular"
+  },{
+    "available": true,
+    "currency": "₦",
+    "inDemand": true,
+    "info": "Get Branded T-shirts",
+    "name": "I Love DFSS",
+    "price": "2000",
+    "soldOut": false,
+    "url": "/ticket/love-dfss"
   }
 ],
   "triggers" : {
