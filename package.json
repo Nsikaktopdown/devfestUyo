@@ -13,7 +13,7 @@
     "firestore:init": "firebase firestore:delete -r --all-collections && babel-node ./internals/import-default-data",
     "firestore:copy": "babel-node ./internals/firestore-copy-data",
     "postinstall": "bower install",
-    "serve": "gulp serve",
+    "serve": "gulp serve && gulp nodemon",
     "serve:prod": "cross-env BUILD_ENV=production gulp serve",
     "lint": "gulp lint",
     "pretest": "npm run lint",
@@ -24,6 +24,7 @@
     "express": "^4.16.3",
     "firebase-functions": "^2.0.5",
     "gulp-live-server": "^0.0.31",
+    "gulp-nodemon": "^2.2.1",
     "nodemailer": "^4.6.8",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"

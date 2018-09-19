@@ -208,13 +208,33 @@ function getConfigPath() {
   return path;
 }
 
+const nodemon = require('gulp-nodemon');
+const gls = require('gulp-live-server');
+
+
 gulp.task('default', build);
 gulp.task('default', gulp.series(lint, build));
+
+gulp.task('nodemon', function (cb) {
+  var started = false;
+
+  return nodemon({
+    script: 'mail.js',
+  }).on('start', function () {
+    // to avoid nodemon being started multiple times
+    // thanks @matthisk
+    if (!started) {
+      cb();
+      started = true;
+    }
+  });
+});
 
 gulp.task('lint', lint);
 gulp.task('deploy', deploy);
 
-gulp.task('serve', gulp.series(compileTemplate, () => {
+gulp.task('serve',
+  gulp.series(compileTemplate, () => {
   browserSync.init({
     logPrefix: 'DevFest SS',
     notify: false,
@@ -222,6 +242,11 @@ gulp.task('serve', gulp.series(compileTemplate, () => {
       baseDir: [config.tempDirectory, './'],
       middleware: [history()],
     },
+  });
+
+  gulp.series(compileTemplate, () => {
+    var server = gls.new('./mail.js');
+    return server.start();
   });
 
   gulp.watch([
