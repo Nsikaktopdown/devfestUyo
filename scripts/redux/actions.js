@@ -122,6 +122,61 @@ const ticketsActions = {
         });
       });
   },
+  email: (data) => (dispatch) => {
+     dispatch({
+       type: EMAIL_TICKET,
+     });
+     var nodemailer = require('nodemailer');
+
+     // Create the transporter with the required configuration for Gmail
+     // change the user and pass !
+     // var transporter = nodemailer.createTransport({
+     // host: 'smtp.zoho.com',
+     // port: 465,
+     // secure: false, // use SSL
+     // auth: {
+     // user: 'noreply@devfestss.tech',
+     // pass: 'revelation',
+     // },
+     // });
+     var transporter = nodemailer.createTransport({
+       host: 'smtp.mailtrap.io',
+       port: 465,
+       secure: false, // use SSL
+       auth: {
+         user: '362ac08128f6a9',
+         pass: 'a2439c729f5c91',
+       },
+     });
+
+     // setup e-mail data, even with unicode symbols
+     var mailOptions = {
+       from: '"DevFest South South Organisers " <noreply@devfestss.tech>', // sender address (who sends)
+       to: data.email, // list of receivers (who receives)
+       subject: 'Hello ', // Subject line
+       // text: 'Hello world ', // plaintext body
+       html: ` <b>Hello world </b>
+                <br> This is the first email sent with Nodemailer in Node.js`, // html body
+     };
+
+     // send mail with defined transport object
+     transporter.sendMail(mailOptions, function (error, info) {
+       if (error) {
+        //  console.log(error);
+        helperActions.trackError('ticketsActions', 'tickets', error);
+        dispatch({
+          type: EMAIL_TICKET_FAILURE,
+          payload: { error },
+        });
+       }
+       dispatch({
+         type: EMAIL_TICKET_SUCCESS,
+         payload: { info },
+       });
+
+      //  console.log(info.response);
+     });
+  },
 };
 
 const _getPartnerItems = (groupId) => firebase.firestore()
@@ -878,44 +933,5 @@ const helperActions = {
     if (window.ga) {
       ga('send', 'event', 'error', action + ':' + method, message);
     }
-  },
-};
-
-const ticketActions = {
-  email: (data) => {
-    const id = data.email.replace(/[^\w\s]/gi, '');
-     var nodemailer = require('nodemailer');
-
-    // Create the transporter with the required configuration for Gmail
-    // change the user and pass !
-    var transporter = nodemailer.createTransport({
-      host: 'smtp.zoho.com',
-      port: 465,
-      secure: false, // use SSL
-      auth: {
-        user: 'noreply@devfestss.tech',
-        pass: 'revelation',
-      },
-    });
-
-    // setup e-mail data, even with unicode symbols
-    var mailOptions = {
-      from: '"DevFest SS " <noreply@devfestss.tech>', // sender address (who sends)
-      to: data.email, // list of receivers (who receives)
-      subject: 'Hello ', // Subject line
-      // text: 'Hello world ', // plaintext body
-      html: ` <b>Hello world </b>
-              <br> This is the first email sent with Nodemailer in Node.js`
-             , // html body
-    };
-
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, function (error, info) {
-      if (error) {
-        return error;
-      }
-
-      return info.response;
-    });
   },
 };

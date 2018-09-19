@@ -21,7 +21,9 @@
   },
   "dependencies": {
     "autotrack": "^2.4.1",
+    "express": "^4.16.3",
     "firebase-functions": "^2.0.5",
+    "gulp-live-server": "^0.0.31",
     "nodemailer": "^4.6.8",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"

@@ -85,6 +85,23 @@ const ticketsReducer = (state = initialState.tickets, action) => {
         list: action.payload.list,
       });
 
+    case EMAIL_TICKET_SUCCESS:
+      return Object.assign({}, state, {
+        fetching: false,
+        list: action.payload.list,
+      });
+
+    case EMAIL_TICKET_FAILURE:
+        return Object.assign({}, state, {
+          fetching: false,
+          list: action.payload.error,
+      });
+    case EMAIL_TICKET:
+        return Object.assign({}, state, {
+          fetching: false,
+          fetchingError: null,
+          list: [],
+        });
     default:
       return state;
   }
