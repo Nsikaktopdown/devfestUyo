@@ -882,7 +882,40 @@ const helperActions = {
 };
 
 const ticketActions = {
-  subscribe: (data) => (dispatch) => {
+  email: (data) => {
     const id = data.email.replace(/[^\w\s]/gi, '');
+     var nodemailer = require('nodemailer');
+
+    // Create the transporter with the required configuration for Gmail
+    // change the user and pass !
+    var transporter = nodemailer.createTransport({
+      host: 'smtp.zoho.com',
+      port: 465,
+      secure: false, // use SSL
+      auth: {
+        user: 'noreply@devfestss.tech',
+        pass: 'revelation',
+      },
+    });
+
+    // setup e-mail data, even with unicode symbols
+    var mailOptions = {
+      from: '"DevFest SS " <noreply@devfestss.tech>', // sender address (who sends)
+      to: data.email, // list of receivers (who receives)
+      subject: 'Hello ', // Subject line
+      // text: 'Hello world ', // plaintext body
+      html: ` <b>Hello world </b>
+              <br> This is the first email sent with Nodemailer in Node.js`
+             , // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, function (error, info) {
+      if (error) {
+        return error;
+      }
+
+      return info.response;
+    });
   },
 };
