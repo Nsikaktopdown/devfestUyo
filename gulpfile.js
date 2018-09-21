@@ -210,7 +210,7 @@ function getConfigPath() {
 
 const nodemon = require('gulp-nodemon');
 const gls = require('gulp-live-server');
-
+const nodemailer = require('nodemailer');
 
 gulp.task('default', build);
 gulp.task('default', gulp.series(lint, build));

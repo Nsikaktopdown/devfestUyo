@@ -170,3 +170,4 @@ self.addEventListener('message', ({ data }) => {
     sessions,
   });
 }, false);
+

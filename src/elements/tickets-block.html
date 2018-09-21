@@ -238,6 +238,7 @@
         if (e.model.ticket.available) {
             dialogsActions.openDialog(DIALOGS.TICKET, {
              amount: e.model.ticket.price,
+             plan: e.model.ticket.name,
           });
         }
       }

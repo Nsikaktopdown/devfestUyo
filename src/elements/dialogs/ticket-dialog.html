@@ -80,9 +80,8 @@
 
 
     </template>
-    
     <script src="https://js.paystack.co/v1/inline.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script>
 
       class TicketDialog extends ReduxMixin(
@@ -177,6 +176,7 @@
                 this.firstFieldLabel = '{$ ticketDialog.firstName $}';
                 this.secondFieldLabel = '{$ ticketDialog.lastName $}';
                 this.amount = data.amount;
+                this.plan = data.plan;
                 this._prefillFields(userData);
             }
 
@@ -187,39 +187,41 @@
                     emailInput.invalid = true;
                     return;
                 }
-
+                let vm = this;
                 var handler = PaystackPop.setup({
                     key: 'pk_test_35289156a9d2cfc55b1e66c5c17b38dcc7240bc7',
                     email: this.email,
                     amount: this.amount * 100,
                     firstname: this.firstFieldValue,
                     lastname: this.secondFieldValue,
-                    plan: '',
                     metadata: {
                         custom_fields: [
                             {
-                                display_name: 'Mobile Number',
-                                variable_name: 'mobile_number',
-                                value: '+2348012345678',
+                                display_name: 'Plan',
+                                variable_name: 'plan',
+                                value: this.plan,
                             }
                         ]
                     },
                     ref: '' + Math.floor((Math.random() * 1000000000) + 1), 
                     callback: function (response) {
-                     alert('successfully subscribed. transaction ref is ' + response.reference);
-                     var data = {
-                        email: this.defaults.email,
-                        firstFieldValue: this.defaults.firstname,
-                        secondFieldValue: this.defaults.lastname,
-                        amount : this.defaults.amount / 100,
-                     };
-                       dialogsActions.closeDialog(DIALOGS.TICKET);
-                       ticketActions.email(data);
-                       //console.log(this.defaults);
-                       //this._sendEmail(data);
+                        var data = {
+                            email: this.defaults.email,
+                            firstname: this.defaults.firstname,
+                            lastname: this.defaults.lastname,
+                            amount : this.defaults.amount / 100,
+                            id: this.defaults.ref,
+                            type: vm.plan,
+                        };
+                        dialogsActions.closeDialog(DIALOGS.TICKET);
+                        
+                        vm._sendEmail(data);
                     }, 
                     onClose: function () {
-                        alert('window closed');
+                        window.toastr.info("Payment Window Closed", {
+                          timeOut: 3000
+                        });
+                        // alert('window closed');
                     }
                 });
                 handler.openIframe();
@@ -230,8 +232,27 @@
                 // });
             }
 
-            _sendEmail(data) {
-                
+            _sendEmail(data){
+               // console.log(data);
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status === 200) {
+                            // console.log("james" + this.responseText);
+                            window.toastr.success("Check your mail, Ticket receipt sent succesfully", {
+                                timeOut: 3000
+                            });
+                        }else{
+                            window.toastr.error("Mail not sent, contact devfest support", {
+                                timeOut: 3000
+                            });
+                        }
+                        
+                    }
+                };
+                xmlhttp.open("GET", "http://laravel-reunite.test/api/sendmail?email=" + data.email+ "&id="+ data.id+ "&type="+data.type+ "&firstname="+data.firstname+"&amount="+data.amount+ "&lastname="+data.lastname);
+                xmlhttp.send();
+
             }
 
             _validateEmail(email) {
