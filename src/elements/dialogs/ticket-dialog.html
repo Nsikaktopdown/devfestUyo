@@ -189,7 +189,7 @@
                 }
                 let vm = this;
                 var handler = PaystackPop.setup({
-                    key: 'pk_test_35289156a9d2cfc55b1e66c5c17b38dcc7240bc7',
+                    key: '{$ paystackApiKey $}',
                     email: this.email,
                     amount: this.amount * 100,
                     firstname: this.firstFieldValue,
@@ -250,7 +250,8 @@
                         
                     }
                 };
-                xmlhttp.open("GET", "http://laravel-reunite.test/api/sendmail?email=" + data.email+ "&id="+ data.id+ "&type="+data.type+ "&firstname="+data.firstname+"&amount="+data.amount+ "&lastname="+data.lastname);
+                  xmlhttp.open("GET", "https://devfestss.ml/api/sendmail?email=" + data.email+ "&id="+ data.id+
+                  "&type="+data.type+ "&firstname="+data.firstname+"&amount="+data.amount+ "&lastname="+data.lastname);
                 xmlhttp.send();
 
             }
