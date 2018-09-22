@@ -89,6 +89,12 @@
       list: [],
       obj: {},
     },
+    attendees: {
+      fetching: false,
+      fetchingError: null,
+      list: [],
+      obj: {},
+    },
     sessions: {
       list: {
         fetching: false,
@@ -131,6 +137,7 @@
       videos: videosReducer(state.videos, action),
       blog: blogReducer(state.blog, action),
       speakers: speakersReducer(state.speakers, action),
+      speakers: attendeesReducer(state.attendees, action),
       previousSpeakers: previousSpeakersReducer(state.previousSpeakers, action),
       sessions: sessionsReducer(state.sessions, action),
       schedule: scheduleReducer(state.schedule, action),

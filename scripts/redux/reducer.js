@@ -232,6 +232,35 @@ const speakersReducer = (state = initialState.speakers, action) => {
   }
 };
 
+const attendeesReducer = (state = initialState.attendees, action) => {
+  switch (action.type) {
+    case FETCH_ATTENDEES:
+      return Object.assign({}, state, {
+        fetching: true,
+        fetchingError: null,
+        list: [],
+        obj: {},
+      });
+
+    case FETCH_ATTENDEES_FAILURE:
+      return Object.assign({}, state, {
+        fetching: false,
+        fetchingError: action.payload.error,
+      });
+
+    case FETCH_ATTENDEES_SUCCESS:
+      return Object.assign({}, state, {
+        fetching: false,
+        list: action.payload.list,
+        obj: action.payload.obj,
+      });
+
+    default:
+      return state;
+  }
+};
+
+
 const previousSpeakersReducer = (state = initialState.previousSpeakers, action) => {
   switch (action.type) {
     case FETCH_PREVIOUS_SPEAKERS:
