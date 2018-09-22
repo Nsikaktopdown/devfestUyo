@@ -194,6 +194,10 @@
 
       static get properties() {
         return {
+          user: {
+          type: Object,
+          statePath: 'user',
+          },
           tickets: {
             type: Array,
             statePath: 'tickets.list',
@@ -235,14 +239,20 @@
       }
 
       _onTicketTap(e) {
-        if (e.model.ticket.available) {
-            dialogsActions.openDialog(DIALOGS.TICKET, {
-             amount: e.model.ticket.price,
-             plan: e.model.ticket.name,
-          });
+        if (this.user.email) {
+            //console.log(this.user);
+            if (e.model.ticket.available) {
+                dialogsActions.openDialog(DIALOGS.TICKET, {
+                  amount: e.model.ticket.price,
+                  plan: e.model.ticket.name,
+                  photo: this.user.photoURL
+                });
+            }
+        } else {
+           dialogsActions.openDialog(DIALOGS.SIGIN);
         }
       }
-
+    
       _registerAction(data) {
         // this.dispatch(subscribeActions.subscribe(data));
       }

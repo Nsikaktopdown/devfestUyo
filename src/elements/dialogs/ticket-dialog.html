@@ -1,6 +1,7 @@
 <link rel="import" href="../../../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../../../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../../bower_components/plastic-image/plastic-image.html">
 <link rel="import" href="../../../bower_components/iron-overlay-behavior/iron-overlay-behavior.html">
 <link rel="import" href="../../mixins/redux-mixin.html">
 <link rel="import" href="../shared-styles.html">
@@ -57,6 +58,22 @@
         <div class="dialog-content" layout vertical>
             <div class="dialog-header">[[title]]</div>
             <div hidden$="[[!errorOccurred]]" class="general-error">{$ ticketDialog.generalError $}</div>
+            
+          <plastic-image 
+             id="photo" 
+             class="section-photo"
+             preload fade lazy-load 
+             srcset="" sizing="cover" 
+             style="height: 100px; 
+                    max-height: 100px;
+                    border-radius: 50%; 
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                    max-width: 100px;">
+          </plastic-image>
+
             <paper-input id="firstFieldInput" on-touchend="_focus" label="[[firstFieldLabel]]" value="{{firstFieldValue}}"
                 autocomplete="off" autofocus="false">
             </paper-input>
@@ -168,6 +185,7 @@
                      firstFieldValue: fullNameSplit[0],
                      secondFieldValue: fullNameSplit[1],
                      emailInput : this.user.email,
+                     photo : data.photo,
                     };
                 }
 
@@ -177,6 +195,7 @@
                 this.secondFieldLabel = '{$ ticketDialog.lastName $}';
                 this.amount = data.amount;
                 this.plan = data.plan;
+                this.photo = data.photo;
                 this._prefillFields(userData);
             }
 
@@ -212,6 +231,7 @@
                             amount : this.defaults.amount / 100,
                             id: this.defaults.ref,
                             type: vm.plan,
+                            photo: vm.photo,
                         };
                         dialogsActions.closeDialog(DIALOGS.TICKET);
                         
@@ -251,8 +271,8 @@
                     }
                 };
                   xmlhttp.open("GET", "https://devfestss.ml/api/sendmail?email=" + data.email+ "&id="+ data.id+
-                  "&type="+data.type+ "&firstname="+data.firstname+"&amount="+data.amount+ "&lastname="+data.lastname);
-                xmlhttp.send();
+                  "&type="+data.type+ "&firstname="+ data.firstname+ "&amount="+data.amount+ "&photo="+data.photo+ "&lastname="+data.lastname);
+                  xmlhttp.send();
 
             }
 
@@ -272,9 +292,11 @@
                 const firstField = this.shadowRoot.querySelector('#firstFieldInput');
                 const secondField = this.shadowRoot.querySelector('#secondFieldInput');
                 const emailInput = this.shadowRoot.querySelector('#emailInput');
+                const photoSrc  = this.shadowRoot.querySelector('#photo')
                 firstField.value = userData ? userData.firstFieldValue : '';
                 secondField.value = userData ? userData.secondFieldValue : '';
                 emailInput.value = userData ? userData.emailInput : '';
+                photoSrc.srcset = userData ? userData.photo : '';
                 firstField.focus();
                 firstField.blur();
                 secondField.focus();
