@@ -91,6 +91,14 @@
       },
       "fontColor": "#424242"
     },
+    "attendee": {
+      "title": "Get to know who are attending",
+      "metaDescription": "Registered participants for DevFest South South 2018",
+      "background": {
+        "color": "#fff"
+      },
+      "fontColor": "#424242"
+    },
     "team": {
       "title": "Get to Know the Team",
       "metaDescription": "Get more info about organizers",

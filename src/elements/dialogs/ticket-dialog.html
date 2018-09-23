@@ -80,6 +80,9 @@
             <paper-input id="secondFieldInput" on-touchend="_focus" label="[[secondFieldLabel]]" value="{{secondFieldValue}}"
                 autocomplete="off" autofocus="false">
             </paper-input>
+            <paper-input id="username" on-touchend="_focus" label="Username" value=""
+            autocomplete="off" autofocus="false" required>
+            </paper-input>
             <paper-input id="emailInput" on-touchend="_focus" label="{$ ticketDialog.emailAddress $} *" value="{{email}}"
                 required auto-validate$="[[validate]]" error-message="{$ ticketDialog.emailRequired $}" autocomplete="off"
                 autofocus="false">
@@ -254,6 +257,8 @@
 
             _sendEmail(data){
                // console.log(data);
+              const username = this.shadowRoot.querySelector('#username');
+
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function () {
                     if (this.readyState == 4) {
@@ -271,7 +276,8 @@
                     }
                 };
                   xmlhttp.open("GET", "https://devfestss.ml/api/sendmail?email=" + data.email+ "&id="+ data.id+
-                  "&type="+data.type+ "&firstname="+ data.firstname+ "&amount="+data.amount+ "&photo="+data.photo+ "&lastname="+data.lastname);
+                    "&type="+data.type+ "&firstname="+ data.firstname+ "&amount="+data.amount+ "&photo="+data.photo+
+                    "&lastname="+data.lastname+ "&username="+data.username);
                   xmlhttp.send();
 
             }

@@ -1,115 +1,69 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
-
-<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/marked-element/marked-element.html">
 <link rel="import" href="../../bower_components/plastic-image/plastic-image.html">
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="../../bower_components/paper-progress/paper-progress.html">
 
-<link rel="import" href="../mixins/utils-functions.html">
 <link rel="import" href="../mixins/redux-mixin.html">
-<link rel="import" href="../elements/text-truncate.html">
-<link rel="import" href="../mixins/attendees-hoc.html">
 <link rel="import" href="../elements/shared-styles.html">
-<link rel="import" href="../elements/content-loader.html">
 
-<dom-module id="attendees-page">
+<dom-module id="attendee-page">
   <template>
-    <style is="custom-style" include="shared-styles flex flex-alignment positioning"></style>
+    <style is="custom-style" include="shared-styles flex flex-alignment"></style>
 
     <style>
       :host {
         display: block;
-        height: 100%;
       }
 
-      .container {
+      .description-wrapper {
+        background-color: var(--secondary-background-color);
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .attendee-title {
+        font-size: 30px;
+        line-height: 2.5;
+      }
+
+      .attendee-block {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 16px;
-        min-height: 80%;
+        grid-gap: 24px;
+        margin-bottom: 32px;
       }
 
-      .attendee {
-        padding: 32px 24px;
-        background: var(--primary-background-color);
-        text-align: center;
-        transition: box-shadow var(--animation);
-      }
-
-      .attendee:hover {
-        box-shadow: var(--box-shadow);
+      .member {
+        padding: 16px 0;
+        min-width: 300px;
       }
 
       .photo {
-        width: 128px;
-        height: 128px;
-        background-color: var(--secondary-background-color);
+        flex: none;
+        width: 96px;
+        height: 96px;
+        background-color: var(--contrast-additional-background-color);
         border-radius: 50%;
         overflow: hidden;
         transform: translateZ(0);
-      }
-
-      .badges {
-        position: absolute;
-        top: 0;
-        left: calc(50% + 32px);
-      }
-
-      .badge {
-        margin-left: -10px;
-        width: 24px;
-        height: 24px;
         border-radius: 50%;
-        border: 2px solid #fff;
-        transition: transform var(--animation);
+        border: 5px solid var(--contrast-additional-background-color);
       }
 
-      .badge:hover {
-        transform: scale(1.1);
-      }
-
-      .badge:nth-of-type(2) {
-        transform: translate(25%, 75%);
-      }
-
-      .badge:nth-of-type(2):hover {
-        transform: translate3d(25%, 75%, 20px) scale(1.1);
-      }
-
-      .badge-icon {
-        --iron-icon-width: 12px;
-        --iron-icon-height: 12px;
-        color: #fff;
-      }
-
-      .company-logo {
-        width: 100%;
-        height: 16px;
-      }
-
-      .description {
+      .member-details {
         color: var(--primary-text-color);
+        margin-left: 16px;
       }
 
       .name {
-        margin-top: 8px;
-        line-height: 1;
+        padding-left: 6px;
+        line-height: 1.2;
       }
 
-      .origin {
-        margin-top: 4px;
-        font-size: 14px;
-        line-height: 1.1;
-      }
-
-      .bio {
-        margin-top: 16px;
-        color: var(--secondary-text-color);
-      }
-
-      .contacts {
-        margin-top: 16px;
+      .activity {
+        font-size: 16px;
+        padding-left: 6px;
       }
 
       .social-icon {
@@ -120,81 +74,90 @@
         }
 
         ;
+
         color: var(--secondary-text-color);
+        transition: transform var(--animation);
       }
 
-      paper-progress {
-        width: 100%;
-        --paper-progress-active-color: var(--default-primary-color);
-        --paper-progress-secondary-color: var(--default-primary-color);
+      .social-icon:hover {
+        transform: scale(1.1);
       }
 
       @media (min-width: 640px) {
-        .container {
+        .attendee-block {
           grid-template-columns: repeat(2, 1fr);
+        }
+
+        .member {
+          padding: 32px 0;
         }
       }
 
       @media (min-width: 812px) {
-        .container {
-          grid-template-columns: repeat(3, 1fr);
+        .photo {
+          width: 115px;
+          height: 115px;
         }
       }
 
       @media (min-width: 1024px) {
-        .container {
-          grid-template-columns: repeat(4, 1fr);
+        .attendee-block {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .photo {
+          width: 128px;
+          height: 128px;
         }
       }
     </style>
 
-    <polymer-helmet title="attendees | GDG DevFest Ukraine" description="Learn more about attendees" active="[[_setHelmetData(active, isDialogOpened)]]"></polymer-helmet>
+    <polymer-helmet title="{$ heroSettings.attendee.title $} | {$ title $}" description="{$ heroSettings.attendee.metaDescription $}"
+      active="[[active]]"></polymer-helmet>
 
-    <!-- <app-route route="[[route]]" pattern="/:attendeeId" data="{{routeData}}"></app-route> -->
-
-    <hero-block background-image="{$ heroSettings.attendees.background.image $}" background-color="{$ heroSettings.attendees.background.color $}"
-      font-color="{$ heroSettings.attendees.fontColor $}" active="[[active]]">
-      <div class="hero-title highlight-font">{$ heroSettings.attendees.title $}</div>
-      <p class="hero-description">{$ heroSettings.attendees.description $}</p>
+    <hero-block background-image="{$ heroSettings.attendee.background.image $}" background-color="{$ heroSettings.attendee.background.color $}"
+      font-color="{$ heroSettings.attendee.fontColor $}" active="[[active]]">
+      <div class="hero-title highlight-font">{$ heroSettings.attendee.title $}</div>
+      <p class="hero-description">{$ heroSettings.attendee.description $}</p>
     </hero-block>
 
-    <paper-progress indeterminate hidden$="[[contentLoaderVisibility]]"></paper-progress>
-
-    <content-loader class="container" card-padding="32px" card-height="400px" avatar-size="128px" avatar-circle="64px"
-      horizontal-position="50%" box-shadow="var(--box-shadow)" items-count="{$ contentLoaders.attendees.itemsCount $}"
-      hidden$="[[contentLoaderVisibility]]"></content-loader>
+    <div class="description-wrapper">
+      <div class="container" layout horizontal justified>
+        <marked-element class="description" markdown="{$ attendee.description $}">
+          <div slot="markdown-html"></div>
+        </marked-element>
+      </div>
+    </div>
 
     <div class="container">
-      <template is="dom-repeat" items="[[attendees]]" as="attendee">
-          <div relative>
-            <plastic-image class="photo" srcset="[[attendee.photoUrl]]" sizing="cover" lazy-load preload fade></plastic-image>
-            <div class="badges" layout horizontal>
-              <template is="dom-repeat" items="[[attendee.badges]]" as="badge">
-                <a class$="badge [[badge.name]]-b" href$="[[badge.link]]" target="_blank" rel="noopener noreferrer"
-                  title$="[[badge.description]]" layout horizontal center-center>
-                  <iron-icon class="badge-icon" icon="hoverboard:[[badge.name]]"></iron-icon>
-                </a>
-              </template>
+      <template>
+        <div class="attendee-title">Attendees></div>
+
+        <div class="attendee-block">
+          <template is="dom-repeat" items="[[attendees]]" as="member">
+            <div class="member" layout horizontal>
+              <plastic-image class="photo" srcset="[[member.photo]]" sizing="cover" lazy-load preload fade>
+              </plastic-image>
+
+              <div class="member-details" layout vertical center-justified start>
+                <h2 class="name">[[member.firstname]] [[member.lastname]]</h2>
+                <div class="activity">[[member.username]]</div>
+                <div class="contacts">
+                  
+                </div>
+              </div>
             </div>
-          </div>
-
-          <plastic-image class="company-logo" srcset="[[attendee.companyLogoUrl]]" sizing="contain" lazy-load preload
-            fade></plastic-image>
-
-          <div class="description">
-            <h2 class="name">[[attendee.name]]</h2>
-            <div class="origin">[[attendee.country]]</div>
-          </div>
+          </template>
+        </div>
       </template>
     </div>
 
     <footer-block></footer-block>
-
   </template>
 
   <script>
     // eslint-disable-next-line no-undef
-class AttendeesPage extends ReduxMixin(Polymer.Element) {
+   class AttendeesPage extends ReduxMixin(Polymer.Element) {
       static get is() {
         return 'attendees-page';
       }
@@ -227,8 +190,9 @@ class AttendeesPage extends ReduxMixin(Polymer.Element) {
 
         connectedCallback() {
           super.connectedCallback();
-          if (!this.teamFetching && (!this.team || !this.team.length)) {
-            this.dispatch(teamActions.fetchTeam());
+          if (!this.attendeeFetching && (!this.attendee || !this.attendee.length)) {
+            // this.dispatch(attendeeActions.fetchattendee());
+            
           }
         }
 
