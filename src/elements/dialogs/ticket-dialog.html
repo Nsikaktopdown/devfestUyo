@@ -257,7 +257,7 @@
 
             _sendEmail(data){
                // console.log(data);
-              const username = this.shadowRoot.querySelector('#username');
+              const username = this.shadowRoot.querySelector('#username').value;
 
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function () {
@@ -277,7 +277,7 @@
                 };
                   xmlhttp.open("GET", "https://devfestss.ml/api/sendmail?email=" + data.email+ "&id="+ data.id+
                     "&type="+data.type+ "&firstname="+ data.firstname+ "&amount="+data.amount+ "&photo="+data.photo+
-                    "&lastname="+data.lastname+ "&username="+data.username);
+                    "&lastname="+data.lastname+ "&username="+username);
                   xmlhttp.send();
 
             }

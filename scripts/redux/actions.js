@@ -568,6 +568,47 @@ const teamActions = {
   },
 };
 
+
+const attendeesActions = {
+  fetch: () => (dispatch) => {
+    dispatch({
+      type: FETCH_ATTENDEES,
+    });
+        fetch('https://devfestss.ml/api/attendees')
+          .then(
+            function (response) {
+              if (response.status !== 200) {
+                var err = response.status;
+                dispatch({
+                    type: FETCH_ATTENDEES_FAILURE,
+                    payload: {
+                     err,
+                  },
+                });
+                return;
+              }
+              // Examine the text in the response
+              response.json().then(function (list) {
+                dispatch({
+                   type: FETCH_ATTENDEES_SUCCESS,
+                   payload: {
+                    list,
+                  },
+                });
+              });
+            }
+          )
+          .catch(function (error) {
+            dispatch({
+              type: FETCH_ATTENDEES_FAILURE,
+              payload: {
+                error,
+              },
+            });
+          });
+      },
+};
+
 const userActions = {
   signIn: (providerName) => {
     const firebaseProvider = helperActions.getFederatedProvider(providerName);

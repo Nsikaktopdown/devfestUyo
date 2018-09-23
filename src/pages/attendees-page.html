@@ -7,7 +7,7 @@
 <link rel="import" href="../mixins/redux-mixin.html">
 <link rel="import" href="../elements/shared-styles.html">
 
-<dom-module id="attendee-page">
+<dom-module id="attendees-page">
   <template>
     <style is="custom-style" include="shared-styles flex flex-alignment"></style>
 
@@ -121,17 +121,8 @@
       <p class="hero-description">{$ heroSettings.attendee.description $}</p>
     </hero-block>
 
-    <div class="description-wrapper">
-      <div class="container" layout horizontal justified>
-        <marked-element class="description" markdown="{$ attendee.description $}">
-          <div slot="markdown-html"></div>
-        </marked-element>
-      </div>
-    </div>
-
     <div class="container">
-      <template>
-        <div class="attendee-title">Attendees></div>
+        <div class="attendee-title">Attendees</div>
 
         <div class="attendee-block">
           <template is="dom-repeat" items="[[attendees]]" as="member">
@@ -149,12 +140,12 @@
             </div>
           </template>
         </div>
-      </template>
     </div>
 
     <footer-block></footer-block>
   </template>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     // eslint-disable-next-line no-undef
    class AttendeesPage extends ReduxMixin(Polymer.Element) {
@@ -166,11 +157,7 @@
         return {
           attendees: {
             type: Array,
-            statePath: 'attendees.list',
-          },
-          attendeesMap: {
-            type: Object,
-            statePath: 'attendees.obj',
+            statePath: 'attendees.list'
           },
           attendeesFetching: {
             type: Boolean,
@@ -181,18 +168,14 @@
             statePath: 'attendees.fetchingError',
           },
           active: Boolean,
-          contentLoaderVisibility: {
-            type: String,
-            value: null,
-          },
         };
       }
 
         connectedCallback() {
           super.connectedCallback();
-          if (!this.attendeeFetching && (!this.attendee || !this.attendee.length)) {
-            // this.dispatch(attendeeActions.fetchattendee());
-            
+          if (!this.attendeesFetching && (!this.attendees || !this.attendees.length)) {
+             this.dispatch(attendeesActions.fetch());
+             //console.log(this.attendees)    
           }
         }
 
