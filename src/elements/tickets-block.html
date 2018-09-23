@@ -239,7 +239,7 @@
       }
 
       _onTicketTap(e) {
-        if (this.user.email) {
+        if (this.user.signedIn) {
             //console.log(this.user);
             if (e.model.ticket.available) {
                 dialogsActions.openDialog(DIALOGS.TICKET, {
