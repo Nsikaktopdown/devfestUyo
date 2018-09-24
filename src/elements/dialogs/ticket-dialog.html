@@ -199,6 +199,9 @@
                 this.amount = data.amount;
                 this.plan = data.plan;
                 this.photo = data.photo;
+                this.coupon = data.coupon,
+                this.coupon_id = data.id || '',
+                this.coupon_code = data.code || '',
                 this._prefillFields(userData);
             }
 
@@ -209,45 +212,63 @@
                     emailInput.invalid = true;
                     return;
                 }
-                let vm = this;
-                var handler = PaystackPop.setup({
-                    key: '{$ paystackApiKey $}',
-                    email: this.email,
-                    amount: this.amount * 100,
-                    firstname: this.firstFieldValue,
-                    lastname: this.secondFieldValue,
-                    metadata: {
-                        custom_fields: [
-                            {
-                                display_name: 'Plan',
-                                variable_name: 'plan',
-                                value: this.plan,
-                            }
-                        ]
-                    },
-                    ref: '' + Math.floor((Math.random() * 1000000000) + 1), 
-                    callback: function (response) {
-                        var data = {
-                            email: this.defaults.email,
-                            firstname: this.defaults.firstname,
-                            lastname: this.defaults.lastname,
-                            amount : this.defaults.amount / 100,
-                            id: this.defaults.ref,
-                            type: vm.plan,
-                            photo: vm.photo,
-                        };
-                        dialogsActions.closeDialog(DIALOGS.TICKET);
-                        
-                        vm._sendEmail(data);
-                    }, 
-                    onClose: function () {
-                        window.toastr.info("Payment Window Closed", {
-                          timeOut: 3000
-                        });
-                        // alert('window closed');
-                    }
-                });
-                handler.openIframe();
+                if (this.coupon) {
+                    const firstname = this.shadowRoot.querySelector('#firstFieldInput');
+                    const lastname = this.shadowRoot.querySelector('#secondFieldInput');
+                    const email = this.shadowRoot.querySelector('#emailInput');
+                    const photo  = this.shadowRoot.querySelector('#photo');
+                    var data = {
+                                email: email.value,
+                                firstname: firstname.value,
+                                lastname: lastname.value,
+                                amount : parseInt(0),
+                                id: this.coupon_code,
+                                type: 'GDG DELEGATES',
+                                photo: this.photo,
+                                coupon: this.coupon_id,
+                            };
+                     dialogsActions.closeDialog(DIALOGS.TICKET);
+                     this._sendEmail(data);
+                }else{
+                   let vm = this;
+                    var handler = PaystackPop.setup({
+                        key: '{$ paystackApiKey $}',
+                        email: this.email,
+                        amount: this.amount * 100,
+                        firstname: this.firstFieldValue,
+                        lastname: this.secondFieldValue,
+                        metadata: {
+                            custom_fields: [
+                                {
+                                    display_name: 'Plan',
+                                    variable_name: 'plan',
+                                    value: this.plan,
+                                }
+                            ]
+                        },
+                        ref: '' + Math.floor((Math.random() * 1000000000) + 1), 
+                        callback: function (response) {
+                            var data = {
+                                email: this.defaults.email,
+                                firstname: this.defaults.firstname,
+                                lastname: this.defaults.lastname,
+                                amount : this.defaults.amount / 100,
+                                id: this.defaults.ref,
+                                type: vm.plan,
+                                photo: vm.photo,
+                            };
+                            dialogsActions.closeDialog(DIALOGS.TICKET);
+                            
+                            vm._sendEmail(data);
+                        }, 
+                        onClose: function () {
+                            window.toastr.info("Payment Window Closed", {
+                            timeOut: 3000
+                            });
+                        }
+                    });
+                    handler.openIframe();
+                }
                 // this.data.submit({
                 // email: this.email,
                 // firstFieldValue: this.firstFieldValue,
@@ -277,7 +298,7 @@
                 };
                   xmlhttp.open("GET", "https://devfestss.ml/api/sendmail?email=" + data.email+ "&id="+ data.id+
                     "&type="+data.type+ "&firstname="+ data.firstname+ "&amount="+data.amount+ "&photo="+data.photo+
-                    "&lastname="+data.lastname+ "&username="+username);
+                    "&lastname="+data.lastname+ "&username="+username+ "&coupon="+data.coupon);
                   xmlhttp.send();
 
             }

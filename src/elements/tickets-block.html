@@ -2,6 +2,7 @@
 
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
 
 <link rel="import" href="../mixins/redux-mixin.html">
 <link rel="import" href="../elements/shared-styles.html">
@@ -100,6 +101,11 @@
         position: relative;
       }
 
+      .coupon {
+        padding: 10px;
+        position: relative;
+      }
+
       .tickets-placeholder {
         display: grid;
         width: 100%;
@@ -148,11 +154,6 @@
             class="ticket-item card"
             sold-out$="[[ticket.soldOut]]"
             in-demand$="[[ticket.inDemand]]"
-            on-tap="_onTicketTap"
-            ga-on="click"
-            ga-event-category="ticket"
-            ga-event-action="buy_click"
-            ga-event-label$="[[ticket.name]]"
           >
             <div class="header">
               <h4>[[ticket.name]]</h4>
@@ -167,12 +168,33 @@
                 <div class="ticket-info">[[ticket.info]]</div>
               </div>
             </div>
+
             <div class="actions">
+               <paper-input class="coupon"
+                            hidden$="[[!ticket.coupon]]" 
+                            bind-value="{{coupon}}" 
+                            value="{{coupon}}" 
+                            on-touchend="_focus"
+                            label="Enter Coupon Code" 
+                            autocomplete="off" 
+                            autofocus="false" 
+                            required
+                            error-message="Coupon Field cannot be empty">
+               </paper-input>
+
               <div class="sold-out" block$="[[ticket.soldOut]]">
                 {$ ticketsBlock.soldOut $}
               </div>
-              <paper-button primary hidden$="[[ticket.soldOut]]" disabled$="[[!ticket.available]]">
-                [[_getButtonText(ticket.available)]]
+             
+              <paper-button primary 
+                            hidden$="[[ticket.soldOut]]"
+                            disabled$="[[!ticket.available]]"
+                            on-tap="_onTicketTap"
+                            ga-on="click"
+                            ga-event-category="ticket"
+                            ga-event-action="buy_click"
+                            ga-event-label$="[[ticket.name]]">
+                           [[_getButtonText(ticket.available)]]
               </paper-button>
             </div>
           </a>
@@ -194,9 +216,22 @@
 
       static get properties() {
         return {
+          ui: {
+              type: Object,
+              statePath: 'ui',
+          },
+          coupon: {
+              type: String,
+              value: "",
+              notify: true
+          },
           user: {
-          type: Object,
-          statePath: 'user',
+            type: Object,
+            statePath: 'user',
+          },
+          validate: {
+              type: Boolean,
+              value: true,
           },
           tickets: {
             type: Array,
@@ -238,23 +273,68 @@
         return ((discount) => `{$ ticketsBlock.save $}`)(Math.round(discount));
       }
 
+       _verifyCoupon(e) {
+        const coupon = this.coupon;
+        var vm = this;
+        // console.log(coupon);
+        if (coupon === '' || coupon == null) {
+            return;
+        }else{
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {    
+                  //  console.log(this);        
+                    if (this.status === 200) {
+                      window.toastr.info("Coupon code activated", {
+                         timeOut: 3000
+                       });
+                        dialogsActions.openDialog(DIALOGS.TICKET, {
+                          amount: e.model.ticket.price,
+                          plan: e.model.ticket.name,
+                          photo: vm.user.photoURL,
+                          coupon: true,
+                          id: this.response,
+                          code: vm.coupon,
+                        });
+                    }else{
+                       window.toastr.error("Please use a valid coupon code", {
+                         timeOut: 3000
+                       });
+                    }
+                    
+                }
+            };
+              xmlhttp.open("GET", "https://devfestss.ml/api/coupon?code=" + coupon);
+              xmlhttp.send();
+        }
+      } 
+    
+
       _onTicketTap(e) {
         if (this.user.signedIn) {
-            //console.log(this.user);
-            if (e.model.ticket.available) {
-                dialogsActions.openDialog(DIALOGS.TICKET, {
-                  amount: e.model.ticket.price,
-                  plan: e.model.ticket.name,
-                  photo: this.user.photoURL
-                });
+            if (e.model.ticket.coupon && e.model.ticket.available) {
+               this._verifyCoupon(e);                 
+            }else{
+               if (e.model.ticket.available) {
+                  dialogsActions.openDialog(DIALOGS.TICKET, {
+                    amount: e.model.ticket.price,
+                    plan: e.model.ticket.name,
+                    photo: this.user.photoURL,
+                    coupon: false,
+                  });
+                }
             }
         } else {
            dialogsActions.openDialog(DIALOGS.SIGNIN);
         }
       }
-    
+
       _registerAction(data) {
         // this.dispatch(subscribeActions.subscribe(data));
+      }
+
+      _disableButton(verified) {
+        return verified ? true : false ;
       }
 
       _getButtonText(available) {

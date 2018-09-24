@@ -576,12 +576,25 @@
   },{
     "available": true,
     "currency": "₦",
+    "ends": "Nov 01",
     "inDemand": true,
     "info": "Get Branded T-shirts",
     "name": "I Love DFSS",
     "price": "2000",
     "soldOut": false,
+    "starts": "Sep 15",
     "url": "/ticket/love-dfss"
+  }, {
+    "available": true,
+    "currency": "",
+    "info": "Do you have a coupon code, lets get you that ticket ",
+    "name": "DFSS BONAZA",
+    "primary": true,
+    "regular": true,
+    "coupon": true,
+    "price": "",
+    "soldOut": false,
+    "url": ""
   }
 ],
   "triggers" : {
