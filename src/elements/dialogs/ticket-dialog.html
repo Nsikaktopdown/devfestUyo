@@ -288,6 +288,9 @@
                             window.toastr.success("Check your mail, Ticket receipt sent succesfully", {
                                 timeOut: 3000
                             });
+                            setTimeout(function () {
+                                window.location.href = "https://www.meetup.com/GDG-Uyo/events/254550307/"; 
+                            }, 7000);
                         }else{
                             window.toastr.error("Mail not sent, contact devfest support", {
                                 timeOut: 3000
