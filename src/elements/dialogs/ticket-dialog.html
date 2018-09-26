@@ -80,9 +80,9 @@
             <paper-input id="secondFieldInput" on-touchend="_focus" label="[[secondFieldLabel]]" value="{{secondFieldValue}}"
                 autocomplete="off" autofocus="false">
             </paper-input>
-            <paper-input id="username" on-touchend="_focus" label="Username" value=""
+            <!-- <paper-input id="username" on-touchend="_focus" label="Username" value=""
             autocomplete="off" autofocus="false" required>
-            </paper-input>
+            </paper-input> -->
             <paper-input id="emailInput" on-touchend="_focus" label="{$ ticketDialog.emailAddress $} *" value="{{email}}"
                 required auto-validate$="[[validate]]" error-message="{$ ticketDialog.emailRequired $}" autocomplete="off"
                 autofocus="false">
@@ -277,9 +277,9 @@
             }
 
             _sendEmail(data){
-               // console.log(data);
-              const username = this.shadowRoot.querySelector('#username').value;
-       
+            //   const username = this.shadowRoot.querySelector('#username').value;
+            const username = 'DevFest Participant';
+
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function () {
                     if (this.readyState == 4) {
