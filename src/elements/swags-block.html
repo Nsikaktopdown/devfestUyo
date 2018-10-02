@@ -152,15 +152,15 @@
         return {
           swags: {
             type: Array,
-            statePath: 'swags.list',
+            statePath: 'gallery.list',
           },
           swagsFetching: {
             type: Boolean,
-            statePath: 'swags.fetching',
+            statePath: 'gallery.fetching',
           },
           swagsFetchingError: {
             type: Object,
-            statePath: 'swags.fetchingError',
+            statePath: 'gallery.fetchingError',
           },
         };
       }
@@ -169,7 +169,7 @@
         super.connectedCallback();
 
         if (!this.swags || !this.swags.length) {
-          this.dispatch(swagsActions.fetchSwags());
+          this.dispatch(galleryActions.fetchSwags());
         }
       }
     }

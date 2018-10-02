@@ -44,6 +44,7 @@
     "sessionsActions": true,
     "scheduleActions": true,
     "galleryActions": true,
+    "swagsActions": true,
     "teamActions": true,
     "userActions": true,
     "subscribeActions": true,

@@ -525,12 +525,9 @@ const galleryActions = {
         });
       });
   },
-};
-
-const swagsActions = {
   fetchSwags: () => (dispatch) => {
     dispatch({
-      type: FETCH_SWAGS,
+      type: FETCH_GALLERY,
     });
 
     return firebase.firestore().collection('swags')
@@ -540,18 +537,19 @@ const swagsActions = {
           .map((snap) => Object.assign({}, snap.data(), { id: snap.id }));
 
         dispatch({
-          type: FETCH_SWAGS_SUCCESS,
+          type: FETCH_GALLERY_SUCCESS,
           payload: { list },
         });
       })
       .catch((error) => {
         dispatch({
-          type: FETCH_SWAGS_FAILURE,
+          type: FETCH_GALLERY_FAILURE,
           payload: { error },
         });
       });
   },
 };
+
 
 const _getTeamMembers = (teamId) => firebase.firestore()
   .collection('team').doc(teamId).collection('members')
