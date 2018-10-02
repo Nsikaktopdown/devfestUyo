@@ -390,6 +390,33 @@ const galleryReducer = (state = initialState.gallery, action) => {
   }
 };
 
+const swagsReducer = (state = initialState.swags, action) => {
+  switch (action.type) {
+    case FETCH_SWAGS:
+      return Object.assign({}, state, {
+        fetching: true,
+        fetchingError: null,
+        list: [],
+      });
+
+    case FETCH_SWAGS_FAILURE:
+      return Object.assign({}, state, {
+        fetching: false,
+        fetchingError: action.payload.error,
+      });
+
+    case FETCH_SWAGS_SUCCESS:
+      return Object.assign({}, state, {
+        fetching: false,
+        list: action.payload.list,
+      });
+
+    default:
+      return state;
+  }
+};
+
+
 const teamReducer = (state = initialState.team, action) => {
   switch (action.type) {
     case FETCH_TEAM:

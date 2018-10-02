@@ -211,6 +211,14 @@
       "link": "https://photos.app.goo.gl/Y1aGMSbHffHhHGuU2"
     }
   },
+  "swagsBlock": {
+    "title": "DevFestSS 2018 Swags",
+    "description": "This year's festival built lots of excitement. Check out photos of what swags and goodies is installed for us.",
+    "callToAction": {
+      "label": "See all",
+      "link": "#"
+    }
+  },
   "mapBlock": {
     "title": "Location"
   },
