@@ -251,9 +251,32 @@ const importNotificationsConfig = async () => {
 
 };
 
+const importSwags = () => {
+  const swags = data.swags;
+  console.log('\tImporting swags...');
+
+  const batch = firestore.batch();
+
+  Object.keys(swags).forEach((docId) => {
+    batch.set(
+      firestore.collection('swags').doc(`${docId}`.padStart(3, 0)), {
+        url: swags[docId],
+        order: docId,
+      },
+    );
+  });
+
+  return batch.commit()
+    .then(results => {
+      console.log('\tImported data for', results.length, 'images');
+      return results;
+    });
+};
+
 initializeFirebase()
   .then(() => importBlog())
   .then(() => importGallery())
+  .then(() => importSwags())
   .then(() => importNotificationsConfig())
   .then(() => importPartners())
   .then(() => importPreviousSpeakers())
