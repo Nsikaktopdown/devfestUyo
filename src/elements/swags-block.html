@@ -127,7 +127,7 @@
 
     <div class="photos-grid">
       <template is="dom-repeat" items="[[swags]]" as="photo">
-        <plastic-image class="grid-item" srcset="[[photo.url]]" sizing="cover" lazy-load preload fade></plastic-image>
+        <plastic-image class="grid-item" srcset="[[photo]]" sizing="cover" lazy-load preload fade></plastic-image>
       </template>
       <div class="swags-info" layout vertical justified>
         <div>
@@ -152,25 +152,24 @@
         return {
           swags: {
             type: Array,
-            statePath: 'gallery.list',
-          },
-          swagsFetching: {
-            type: Boolean,
-            statePath: 'gallery.fetching',
-          },
-          swagsFetchingError: {
-            type: Object,
-            statePath: 'gallery.fetchingError',
           },
         };
       }
 
       connectedCallback() {
         super.connectedCallback();
-
-        if (!this.swags || !this.swags.length) {
-          this.dispatch(galleryActions.fetchSwags());
-        }
+        
+      this.swags = [
+                      "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fswags%2Fswag-6.png?alt=media&token=15e12e3d-5166-4c1f-ac5a-9d1fda627b6f",
+                      "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fswags%2Fswag-2.png?alt=media&token=5a95b192-893a-4201-8969-a7255f0cf5cb",
+                      "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fswags%2Fswag-3.png?alt=media&token=999d408c-73a9-49ae-8adc-b66c30a55832",
+                      "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fswags%2Fswag-4.png?alt=media&token=46c9d1ec-c303-40b1-ad59-25ca45aaacf9",
+                      "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fswags%2Fswag-5.png?alt=media&token=f15b59d7-633a-4923-a011-aca0d8185b64",
+                      "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fswags%2Fswag-1.png?alt=media&token=6cfd89f3-779e-417c-bcdb-560382ce3c25"
+                    ]
+        // if (!this.swags || !this.swags.length) {
+        //   this.dispatch(swagsActions.fetchSwags());
+        // }
       }
     }
 
