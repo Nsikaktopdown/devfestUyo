@@ -497,6 +497,24 @@
         }
       ],
       "title": "Software Developer"
+    },
+    "unicodeveloper": {
+      "bio": "Developer Advocate, Apollo. Leading expansion and developer advocacy as Director of Evangelism, forloop Africa.",
+      "company": "Apollo",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": true,
+      "name": "Prosper Otemuyiwa",
+      "photo": "/images/people/unicodeveloper.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fprosper.6da2c4d4.jpg?alt=media&token=db343785-fe5b-4eb4-9f56-9bb17db04920",
+      "shortBio": "Developer Advocate, Apollo",
+      "socials": [{
+        "icon": "twitter",
+        "link": "https://twitter.com/unicodeveloper",
+        "name": "Twitter"
+      }],
+      "title": "Principal Developer Advocate"
     }
   },
   "team" : [ {
