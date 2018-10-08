@@ -180,18 +180,6 @@
 <noscript>
   Please enable JavaScript to view this website.
 </noscript>
-
-<script>
-  window.performance && performance.mark && performance.mark('index.html');
-
-  window.onload = function () {
-    const indexRenderTime = window.measureDuration && window.measureDuration('index.html');
-    if (indexRenderTime) {
-      ga('send', 'timing', 'index.html', 'render', indexRenderTime);
-    }
-  };
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
   var Tawk_API = Tawk_API || {},
@@ -207,6 +195,19 @@
   })();
 </script>
 <!--End of Tawk.to Script-->
+
+<script>
+  window.performance && performance.mark && performance.mark('index.html');
+
+  window.onload = function () {
+    const indexRenderTime = window.measureDuration && window.measureDuration('index.html');
+    if (indexRenderTime) {
+      ga('send', 'timing', 'index.html', 'render', indexRenderTime);
+    }
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+
 </body>
 
 </html>
