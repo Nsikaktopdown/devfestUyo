@@ -453,42 +453,17 @@
       } ],
       "title" : "Certified Android Developer"
     },
-    "judeebene": {
-      "bio": "Entrepreneur and Co-Founder at #ShareQube, Software Developer, Deep learning enthusiast, Under30CEO. Software Developer @pillarProject",
-      "company": "ShareQube",
-      "companyLogo": "",
-      "companyLogoUrl": "",
-      "country": "London",
-      "featured": true,
-      "name": "Jude Ben",
-      "photo": "/images/people/jude_ben.jpg",
-      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fjudeben.jpeg?alt=media&token=9cf1a0d1-4fca-4f14-9d0b-cce6799a81b5",
-      "shortBio": "Co-Founder at #ShareQube, Software Developer, Deep learning enthusiast",
-      "socials": [
-        {
-          "icon": "gplus",
-          "link": "#",
-          "name": "Google+"
-        },
-        {
-          "icon": "twitter",
-          "link": "https://twitter.com/judeebene",
-          "name": "Twitter"
-        }
-      ],
-      "title": "Deep learning enthusiast"
-    },
     "belvi": {
-      "bio": "Software Developer | Open Sourcerer | Expert @CodementorIO @hackhands | Mobile Engineer @tryintelia",
+      "bio": " Mobile Engineer @tryintelia | Open Sourcerer | Expert @CodementorIO @hackhands ",
       "company": "Intelia",
       "companyLogo": "",
       "companyLogoUrl": "",
       "country": "Lagos, Nigeria",
-      "featured": false,
+      "featured": true,
       "name": "Belvi Nosakhare",
       "photo": "/images/people/belvi.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fbelvi.png?alt=media&token=008f3d6d-9f9f-49ac-a39f-7f8573930d23",
-      "shortBio": "Software Developer | Open Sourcerer",
+      "shortBio": "Mobile Developer | Open Sourcerer",
       "socials": [
         {
           "icon": "twitter",
@@ -496,7 +471,7 @@
           "name": "Twitter"
         }
       ],
-      "title": "Software Developer"
+      "title": "Mobile Developer"
     },
     "unicodeveloper": {
       "bio": "Developer Advocate, Apollo. Leading expansion and developer advocacy as Director of Evangelism, forloop Africa.",
