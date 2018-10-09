@@ -192,9 +192,17 @@
   };
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
-
-<script type="text/javascript">function add_chatinline() { var hccid = 17002794; var nt = document.createElement("script"); nt.async = true; nt.src = "https://mylivechat.com/chatinline.aspx?hccid=" + hccid; var ct = document.getElementsByTagName("script")[0]; ct.parentNode.insertBefore(nt, ct); }
-  add_chatinline(); </script>
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+  var _smartsupp = _smartsupp || {};
+  _smartsupp.key = 'a44632389e536ef9ff3107b6b972509238ac700b';
+  window.smartsupp || (function (d) {
+    var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+    s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+    c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+    c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+  })(document);
+</script>
 </body>
 
 </html>
