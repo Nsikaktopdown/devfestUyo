@@ -382,6 +382,11 @@
   },
   "speakers" : {
     "aniediudo" : {
+      "badges": [{
+        "description": "Product Manager",
+        "link": "https://google.com.ng",
+        "name": "google"
+      }],
       "bio" : "Developer, Product Manager, Open Source Evangelist with over 10 years experience working with startups in HR, Media, Finance, Education & Logistics.",
       "company" : "Google",
       "companyLogo" : "/images/logos/google.svg",
