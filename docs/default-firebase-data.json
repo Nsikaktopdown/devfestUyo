@@ -410,80 +410,6 @@
       } ],
       "title" : "Product Manager/Developer"
     },
-    "nextdeegit" : {
-      "badges": [
-        {
-          "description": "Google Developer Country Mentor, Nigeria",
-          "link": "https://developers.google.com/groups/chapter/",
-          "name": "gdg"
-        }
-      ],
-      "bio" : "Country Mentor Google Developer Groups Nigeria. CEO Start Innovation Hub. A tech entrepreneur whose dream is to save the world with a click.  ",
-      "company" : "Start Innovation Hub",
-      "companyLogo" : "/images/logos/starthub.svg",
-      "companyLogoUrl" : "",
-      "country" : "Uyo, Nigeria",
-      "featured" : true,
-      "name" : "Hanson Johnson",
-      "photo" : "/images/people/hanson_johnson.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fhanson_johnson.jpg?alt=media&token=20fbb724-dbab-47ed-aa91-f7730d436637",
-      "shortBio" : "Country Mentor Google Developer Groups Nigeria. CEO Start Innovation Hub.",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "#",
-        "name" : "Google+"
-      }, {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/nextdeegit",
-        "name" : "Twitter"
-      } ],
-      "title" : "CEO Start Innovation Hub."
-    },
-    "emem_brownson" : {
-      "badges": [
-        {
-          "description": "Women Tech Makers Lead, Uyo",
-          "link": "https://developers.google.com/groups/chapter/",
-          "name": "wtm"
-        }
-      ],
-      "bio" : "Founder/CEO at AfroPot, Certified Android Developer, Google Women Techmakers Lead Uyo.",
-      "company" : "AfroPot",
-      "companyLogo" : "/images/logos/women-tech-maker.svg",
-      "companyLogoUrl" : "",
-      "country" : "Uyo, Nigeria",
-      "featured" : true,
-      "name" : "Emem Brownson",
-      "photo" : "/images/people/emem_brownson.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Femem_brownson.jpg?alt=media&token=d1d93de0-99e9-4915-880f-2f8ee3380811",
-      "shortBio" : "Founder/CEO at AfroPot, Certified Android Developer, Google Women Techmakers Lead Uyo ...",
-      "socials" : [ {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/brownjee001",
-        "name" : "Twitter"
-      } ],
-      "title" : "Certified Android Developer"
-    },
-    "belvi": {
-      "bio": " Mobile Engineer @tryintelia | Open Sourcerer | Expert @CodementorIO @hackhands ",
-      "company": "Intelia",
-      "companyLogo": "",
-      "companyLogoUrl": "",
-      "country": "Lagos, Nigeria",
-      "featured": true,
-      "name": "Belvi Nosakhare",
-      "photo": "/images/people/belvi.jpg",
-      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fbelvi.png?alt=media&token=008f3d6d-9f9f-49ac-a39f-7f8573930d23",
-      "shortBio": "Mobile Developer | Open Sourcerer",
-      "socials": [
-        {
-          "icon": "twitter",
-          "link": "https://twitter.com/Kingsmentor",
-          "name": "Twitter"
-        }
-      ],
-      "title": "Mobile Developer"
-    },
     "unicodeveloper": {
       "bio": "Developer Advocate, Apollo. Leading expansion and developer advocacy as Director of Evangelism, forloop Africa.",
       "company": "Apollo",
@@ -519,6 +445,98 @@
         "name": "Twitter"
       }],
       "title": "CEO"
+    },
+    "celestineomin": {
+      "bio": "Celestine Omin is a software engineer based in Lagos, Nigeria. He is currently a Engineer Manager at Paystack",
+      "company": "Paystack",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": true,
+      "name": "Celestine Omin",
+      "photo": "/images/people/celestineomin.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fcelestineomin.jpeg?alt=media&token=cfeacf89-aa22-4ea2-83a9-27dcc931d4c2",
+      "shortBio": "Software Engineer based in Lagos, Nigeria.",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/cyberomin",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Software Engineer"
+    },
+    "nextdeegit" : {
+      "badges": [
+        {
+          "description": "Google Developer Country Mentor, Nigeria",
+          "link": "https://developers.google.com/groups/chapter/",
+          "name": "gdg"
+        }
+      ],
+      "bio" : "Country Mentor Google Developer Groups Nigeria. CEO Start Innovation Hub. A tech entrepreneur whose dream is to save the world with a click.  ",
+      "company" : "Start Innovation Hub",
+      "companyLogo" : "/images/logos/starthub.svg",
+      "companyLogoUrl" : "",
+      "country" : "Uyo, Nigeria",
+      "featured" : true,
+      "name" : "Hanson Johnson",
+      "photo" : "/images/people/hanson_johnson.jpg",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fhanson_johnson.jpg?alt=media&token=20fbb724-dbab-47ed-aa91-f7730d436637",
+      "shortBio" : "Country Mentor Google Developer Groups Nigeria. CEO Start Innovation Hub.",
+      "socials" : [ {
+        "icon" : "gplus",
+        "link" : "#",
+        "name" : "Google+"
+      }, {
+        "icon" : "twitter",
+        "link" : "https://twitter.com/nextdeegit",
+        "name" : "Twitter"
+      } ],
+      "title" : "CEO Start Innovation Hub."
+    },
+    "belvi": {
+      "bio": " Mobile Engineer @tryintelia | Open Sourcerer | Expert @CodementorIO @hackhands ",
+      "company": "Intelia",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": true,
+      "name": "Belvi Nosakhare",
+      "photo": "/images/people/belvi.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fbelvi.png?alt=media&token=008f3d6d-9f9f-49ac-a39f-7f8573930d23",
+      "shortBio": "Mobile Developer | Open Sourcerer",
+      "socials": [{
+        "icon": "twitter",
+        "link": "https://twitter.com/Kingsmentor",
+        "name": "Twitter"
+      }],
+      "title": "Mobile Developer"
+    },
+    "emem_brownson" : {
+      "badges": [
+        {
+          "description": "Women Tech Makers Lead, Uyo",
+          "link": "https://developers.google.com/groups/chapter/",
+          "name": "wtm"
+        }
+      ],
+      "bio" : "Founder/CEO at AfroPot, Certified Android Developer, Google Women Techmakers Lead Uyo.",
+      "company" : "AfroPot",
+      "companyLogo" : "/images/logos/women-tech-maker.svg",
+      "companyLogoUrl" : "",
+      "country" : "Uyo, Nigeria",
+      "featured" : true,
+      "name" : "Emem Brownson",
+      "photo" : "/images/people/emem_brownson.jpg",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Femem_brownson.jpg?alt=media&token=d1d93de0-99e9-4915-880f-2f8ee3380811",
+      "shortBio" : "Founder/CEO at AfroPot, Certified Android Developer, Google Women Techmakers Lead Uyo ...",
+      "socials" : [ {
+        "icon" : "twitter",
+        "link" : "https://twitter.com/brownjee001",
+        "name" : "Twitter"
+      } ],
+      "title" : "Certified Android Developer"
     }
   },
   "team" : [ {
