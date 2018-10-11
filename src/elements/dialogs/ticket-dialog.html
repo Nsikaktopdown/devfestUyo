@@ -313,7 +313,7 @@
                         
                     }
                 };
-                  xmlhttp.open("GET", "https://devfestss.ml/api/sendmail?email=" + data.email+ "&id="+ data.id+
+                    xmlhttp.open("GET", "{$ emailServer $}/api/sendmail?email=" + data.email+ "&id="+ data.id+
                     "&type="+data.type+ "&firstname="+ data.firstname+ "&amount="+data.amount+ "&photo="+data.photo+
                     "&lastname="+data.lastname+ "&username="+username+ "&coupon="+data.coupon);
                   xmlhttp.send();

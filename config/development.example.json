@@ -13,6 +13,6 @@
     "messagingSenderId": ""
   },
   "googleMapApiKey": "AIzaSyDWy6O98n-ueoVaYPWRPve23vjm3JP08gw",
-  "paystackApiKey": ""
-
+  "paystackApiKey": "",
+  "emailServer": ""
 }
