@@ -393,7 +393,7 @@
         "link": "https://google.com.ng",
         "name": "google"
       }],
-      "bio" : "Developer, Product Manager, Open Source Evangelist with over 10 years experience working with startups in HR, Media, Finance, Education & Logistics.",
+      "bio": "Program Manager, Developer Ecosystem for Sub-Saharan Africa.",
       "company" : "Google",
       "companyLogo" : "/images/logos/google.svg",
       "companyLogoUrl" : "",
@@ -495,13 +495,40 @@
       } ],
       "title" : "CEO Start Innovation Hub."
     },
+    "emem_brownson": {
+      "badges": [
+        {
+          "description": "Women Tech Makers Lead, Uyo",
+          "link": "https://developers.google.com/groups/chapter/",
+          "name": "wtm"
+        }
+      ],
+      "bio": "Founder/CEO at AfroPot, Certified Android Developer, Google Women Techmakers Lead Uyo.",
+      "company": "AfroPot",
+      "companyLogo": "/images/logos/women-tech-maker.svg",
+      "companyLogoUrl": "",
+      "country": "Uyo, Nigeria",
+      "featured": false,
+      "name": "Emem Brownson",
+      "photo": "/images/people/emem_brownson.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Femem_brownson.jpg?alt=media&token=d1d93de0-99e9-4915-880f-2f8ee3380811",
+      "shortBio": "Founder/CEO at AfroPot, Certified Android Developer, Google Women Techmakers Lead Uyo ...",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/brownjee001",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Certified Android Developer"
+    },
     "belvi": {
       "bio": " Mobile Engineer @tryintelia | Open Sourcerer | Expert @CodementorIO @hackhands ",
       "company": "Intelia",
       "companyLogo": "",
       "companyLogoUrl": "",
       "country": "Lagos, Nigeria",
-      "featured": true,
+      "featured": false,
       "name": "Belvi Nosakhare",
       "photo": "/images/people/belvi.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fbelvi.png?alt=media&token=008f3d6d-9f9f-49ac-a39f-7f8573930d23",
@@ -513,30 +540,157 @@
       }],
       "title": "Mobile Developer"
     },
-    "emem_brownson" : {
-      "badges": [
+    "kolokodess": {
+      "bio": "Ada is a software developer and open source advocate who currently leads developer relations at Interswitch group. She's also the founder of She Code Africa and Open Source Community Africa where she's focused on matters bothered around Women in tech and Open Source respectively",
+      "company": "Interswitch",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": true,
+      "name": "Ada Nduka Oyom",
+      "photo": "/images/people/ada.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fkoko.jpeg?alt=media&token=375771ff-9de9-4cd0-8e52-765d1d36c0bc",
+      "shortBio": "Software developer and Open source advocate.",
+      "socials": [{
+        "icon": "twitter",
+        "link": "https://twitter.com/kolokodess",
+        "name": "Twitter"
+      }],
+      "title": "Developer relations, Interswitch group"
+    },
+    "perrie": {
+      "bio": "Currently studying Microbiology at the University Of Port Harcourt. Designing experiences and interfaces at Sugar Labs. Educator. Open Sourcerer, one of the founding members of OSCA (a community of open source contributors in Africa). Port Harcourt Bolé Ambassador.",
+      "company": "Sugar Labs",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Port Harcourt, Nigeria",
+      "featured": false,
+      "name": "Peace Ojemeh",
+      "photo": "/images/people/belvi.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fperrie.PNG?alt=media&token=74d0b739-a7bd-40f7-bdde-f919339359d2",
+      "shortBio": "I am a user experience and user interface designer.",
+      "socials": [
         {
-          "description": "Women Tech Makers Lead, Uyo",
-          "link": "https://developers.google.com/groups/chapter/",
-          "name": "wtm"
+          "icon": "twitter",
+          "link": "https://twitter.com/Peace_Ojemeh",
+          "name": "Twitter"
         }
       ],
-      "bio" : "Founder/CEO at AfroPot, Certified Android Developer, Google Women Techmakers Lead Uyo.",
-      "company" : "AfroPot",
-      "companyLogo" : "/images/logos/women-tech-maker.svg",
-      "companyLogoUrl" : "",
-      "country" : "Uyo, Nigeria",
-      "featured" : true,
-      "name" : "Emem Brownson",
-      "photo" : "/images/people/emem_brownson.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Femem_brownson.jpg?alt=media&token=d1d93de0-99e9-4915-880f-2f8ee3380811",
-      "shortBio" : "Founder/CEO at AfroPot, Certified Android Developer, Google Women Techmakers Lead Uyo ...",
-      "socials" : [ {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/brownjee001",
-        "name" : "Twitter"
-      } ],
-      "title" : "Certified Android Developer"
+      "title": "UI/UX Designer"
+    },
+    "namnsoukpanah": {
+      "bio": "Namnso Ukpanah is a designer and a community leader who has been advocating for design accessibility through a well-defined design education across Africa.  He is currently the Lead UX Designer at hotels.ng, the biggest online hotel booking agency in Nigeria and also the Lead Designer Advocate for Figma Africa, a community sponsored by Figma that is focused on bringing designers in Africa together under one platform through design events, Learn Design Programs and other partnerships to boost the design ecosystem.",
+      "company": "Hotels.ng",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": true,
+      "name": "Namnso Ukpanah",
+      "photo": "/images/people/ada.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fnamso.jpg?alt=media&token=b1e87711-5d3c-4948-ae9b-77d3c5380dc9",
+      "shortBio": "UI/UX Designer and a Community leader",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/namnsoukpanah",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Lead Designer Advocate, Figma Africa | Lead UX Designer, hotels.ng"
+    },
+    "naco_john": {
+      "bio": "A Web Developer, Tech coach/mentor for Beginners. #Angular Lover. TechPassionate. Google Developer Group Aba Lead, Co-founder @rad5tech",
+      "company": "RAD5 Tech Hub",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Aba, Nigeria",
+      "featured": false,
+      "name": "John Nnanna Oji",
+      "photo": "/images/people/john.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fjohn.JPG?alt=media&token=1f235828-4417-47ae-b9b3-d272d1f0ebe5",
+      "shortBio": "Tech coach/mentor for Beginners. #Angular Lover.",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/naco_john",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Web Developer, Co-founder, RAD5 Tech Hub"
+    },
+    "OgieBen": {
+      "bio": "I am a Software developer who is passionate about Machine Learning. Skilled in building in Android, Nodejs, Angular and PHP",
+      "company": "Dewbicon",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Port Harcourt, Nigeria",
+      "featured": false,
+      "name": "Ogie Ben",
+      "photo": "/images/people/ogie.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fbenogie.jpg?alt=media&token=30602098-b382-4ed4-a2b5-5303efdc1a8b",
+      "shortBio": "Software developer and passionate about Machine Learning",
+      "socials": [{
+        "icon": "twitter",
+        "link": "https://twitter.com/OgieBen",
+        "name": "Twitter"
+      }],
+      "title": "Android Developer at Dewbicon"
+    },
+    "akinrolie": {
+      "bio": "Akinrolie Shola is a Software Developer and a passionate community builder, he has successfully made impact in the developer ecosystem across the nation, quite a huge contribution to tech communities like Google Developers Group, Andela Learning Community and Kotlin Community, among few. He has trained over 5,000 people in Digital Skills for Africa and he believes his just getting started. He co-founded “SaveTheDream” foundation, A platform focused on helping people to achieve their dream. He is the pioneer founder of GDG Akoko, Kotlin Abuja, Kotlin Nairobi, Kotlin Enugu and Kotlin Ondo. He believes that much respect should be given to folks who never let their success build walls of elitism. “Watchword” Be aware that Nothing is given, Everything is earned, you work for what you have … play hard but Work harder.",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Abuja, Nigeria",
+      "featured": false,
+      "name": "Ogie Ben",
+      "photo": "/images/people/akin.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fshola.JPG?alt=media&token=ef6c7656-a78e-4a1c-9ba5-9579a8ac9969",
+      "shortBio": "Software Developer || Passionate Community Builder",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/akinrolie_slick",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Software Developer"
+    },
+    "nuckecy": {
+      "bio": "Otobong is a User Experience Developer (User Experience Designer and Frontend Developer). He has a passion for designing and coding; to build beautiful, user-friendly and meaningful web experiences with an intense focus on performance, accessibility, modern technologies, and responsive design.",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": false,
+      "name": "Otobong Okoko",
+      "photo": "/images/people/otobong.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fotobong.jpg?alt=media&token=7a2c4387-4eb8-4a6a-9747-928c2d7f0f63",
+      "shortBio": "UX Designer & Frontend Developer",
+      "socials": [{
+        "icon": "twitter",
+        "link": "https://twitter.com/nuckecy",
+        "name": "Twitter"
+      }],
+      "title": "Lead UX Designer & Frontend Developer at Sterling Bank Plc, Nigeria."
+    },
+    "auwalms_": {
+      "bio": "Auwal MS is a passionate Developer with experience building web and mobile apps. Due to his love for community building, he has volunteered the last 4 years actively managing developers community across Africa.",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Abuja, Nigeria",
+      "featured": false,
+      "name": "Ogie Ben",
+      "photo": "/images/people/auwalms.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Faniediudo.jpg?alt=media&token=4f0cbf2e-3372-4c2f-b0e5-68b00e719442",
+      "shortBio": "Passionate  Developer || Lead Program Assistant, Andela ALC",
+      "socials": [{
+        "icon": "twitter",
+        "link": "https://twitter.com/auwalms_",
+        "name": "Twitter"
+      }],
+      "title": "Software Engineer, Intellectual Apps; Lead Program Assistant, Andela ALC; Organiser, GDG Lafia "
     }
   },
   "team" : [ {
