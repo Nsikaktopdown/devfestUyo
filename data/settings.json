@@ -126,17 +126,17 @@
   },
   "location": {
     "label": "Location",
-    "name": "Emerald Event Center",
+    "name": "Je-nissi Event Center",
     "city": "Uyo",
     "short": "Akwa-Ibom, Nigeria",
-    "address": "Emerald Event Center, General Edet Akpan Ave, Uyo",
+    "address": "Je-nissi events  7 Akpaube street off Babangida Avenue, Uyo.",
     "pointer": {
-      "latitude": 5.0106246,
-      "longitude": 7.9510438,
+      "latitude": 5.012664,
+      "longitude": 7.914884,
       "zoom": 10
     },
     "mapCenter": {
-      "latitude": 5.03,
+      "latitude": 5.01,
       "longitude": 7.91
     },
     "description": "DevFest South South will take place in Uyo - the state capital of Akwa Ibom. Expect huge screens and perfect sound. Everything is set to deliver the best conference experience possible."
