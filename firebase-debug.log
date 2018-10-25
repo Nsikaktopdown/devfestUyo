@@ -1,0 +1,13 @@
+[debug] [2018-10-25T11:20:44.074Z] ----------------------------------------------------------------------
+[debug] [2018-10-25T11:20:44.076Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-10-25T11:20:44.077Z] CLI Version:   4.2.1
+[debug] [2018-10-25T11:20:44.077Z] Platform:      darwin
+[debug] [2018-10-25T11:20:44.077Z] Node Version:  v8.12.0
+[debug] [2018-10-25T11:20:44.077Z] Time:          Thu Oct 25 2018 12:20:44 GMT+0100 (WAT)
+[debug] [2018-10-25T11:20:44.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-25T11:20:44.131Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-25T11:20:44.131Z] > authorizing via signed-in user
+[debug] [2018-10-25T11:20:44.134Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/trend-76131  
+ 
+[debug] [2018-10-25T11:20:46.469Z] <<< HTTP RESPONSE 200
