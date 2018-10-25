@@ -131,9 +131,9 @@
     "short": "Akwa-Ibom, Nigeria",
     "address": "Je-nissi events  7 Akpaube street off Babangida Avenue, Uyo.",
     "pointer": {
-      "latitude": 5.012664,
-      "longitude": 7.914884,
-      "zoom": 10
+      "latitude": 5.0116652,
+      "longitude": 7.9167358,
+      "zoom": 10,
     },
     "mapCenter": {
       "latitude": 5.01,

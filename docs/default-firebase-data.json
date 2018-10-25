@@ -447,7 +447,7 @@
       "title": "CEO"
     },
     "celestineomin": {
-      "bio": "Celestine Omin is a software engineer based in Lagos, Nigeria. He is currently a Engineer Manager at Paystack",
+      "bio": "Celestine Omin is a software engineer based in Lagos, Nigeria. He is currently an Engineering Manager at Paystack, a technology company solving payments problems for ambitious businesses in Africa.  Prior to Paystack, he worked as a Senior Technical Consultant at Andela, an elite engineering organization that provides companies with access to the top 1% of tech talent across the African continent. As Senior Technical Consultant, Celestine managed teams of Andela developers and works with Andela’s partner companies to understand their business goals and product roadmap. He provided technical guidance and oversight to ensure that engineering teams are running in accordance with world-class technical standards. Prior to Andela, Celestine worked at Konga, the largest online e-commerce marketplace in Nigeria with well over 20,000 merchants and $78.5M in venture funding. While at Konga, Celestine served as the lead engineer for SellerHQ, helped in migrating some of the company’s monolithic applications to micro-services, and led the development of a community forum for Konga’s merchants and customers that greatly shaped the company’s product roadmap and strategy. Outside of Andela, Celestine speaks regularly at technology conferences across Africa. He organizes and leads Africa Git Meetup, which recently featured GitLab’s Kelvin Mutuma as a guest speaker. Celestine has a bachelor in Computer Science from the University of Calabar. He blogs and shares his thoughts about startups in emerging markets, with a special focus on Nigeria and Africa, at http: //cyberomin.github.io.",
       "company": "Paystack",
       "companyLogo": "",
       "companyLogoUrl": "",
@@ -691,6 +691,44 @@
         "name": "Twitter"
       }],
       "title": "Software Engineer, Intellectual Apps; Lead Program Assistant, Andela ALC; Organiser, GDG Lafia "
+    },
+    "theodoraisola": {
+      "bio": "Theodora Isola, an Information Systems & Technology Strategist, a Product Manager, a Speaker and Technical Writer. Her work daily involves researching, strategizing, designing roadmaps and working with teams to build efficient Software Products that users love.She is passionate about building / promoting new 'stuff': products, markets, and business relationships as well as empowering and teaching youths digital skills, helping them start an Information technology career.",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Abuja, Nigeria",
+      "featured": false,
+      "name": "Auwal MS",
+      "photo": "/images/people/auwalms.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Ftheodoraisola.JPG?alt=media&token=87233ab5-458b-41f3-b84e-5df610d0b7f4",
+      "shortBio": "Information Systems & Technology Strategist",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/theodoraisola",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Information Systems & Technology Strategist"
+    },
+    "umekalu": {
+      "bio": "",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Abuja, Nigeria",
+      "featured": false,
+      "name": "Ume Abraham Kalu",
+      "photo": "/images/people/umekalu.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fumekalu.JPG?alt=media&token=198f17da-b98c-46dc-b1db-2edcfbb0e59b",
+      "shortBio": "Lead Organizer, GDG Bonny Island & Co - founder aihub, Bonny Island",
+      "socials": [{
+        "icon": "twitter",
+        "link": "https://twitter.com/umekalu",
+        "name": "Twitter"
+      }],
+      "title": "Co-founder Aihub"
     }
   },
   "team" : [ {
