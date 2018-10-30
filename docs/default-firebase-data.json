@@ -62,7 +62,7 @@
       "url" : "https://meetup.com/GDG-Uyo/"
     },
     {
-      "logoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2F360.jpeg?alt=media&token=1283f2ae-a188-4212-b9b3-8c07732b67d7 ",
+      "logoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2F360.jpeg?alt=media&token=7db4ab0f-bf77-47d0-8bca-772b94047c77",
       "name": "36Zero",
       "url": "https://36zero.ng/"
     }
@@ -734,6 +734,46 @@
         "name": "Twitter"
       }],
       "title": "Co-founder Aihub"
+    },
+    "iametefia": {
+      "bio": "Iam Etefia is Business Evangelist. He is very particular about building a business empire and helping others build theirs. He is particular about perspective and growth. His desire for excellence is topnotch, he believes in people, products and process. He works hard and smart to be globally relevant.  Iam's vision is building a business empire, hence he has over the years forged himself into a force to be reckoned with through the different digital skills he has acquired. He is a value oriented individual who works with different 'brands' personal and corporate to achieve their set goals.  He leads different Tech/Entrepreneurial Community in Akwa Ibom and Nigeria.   Iam is the founder and CEO of 36Zero, A creative digital marketing agency in Uyo, Akwa Ibom state.  The first of its kind in the state. ",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Uyo, Nigeria",
+      "featured": false,
+      "name": "Iam Etefia",
+      "photo": "/images/people/iametefia.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2FEtefia.jpg?alt=media&token=5a5c46b9-0b90-4e77-8fa0-b4184b4c47db",
+      "shortBio": "",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/IamEtefia",
+          "name": "Twitter"
+        }
+      ],
+      "title": "CEO at 36Zero"
+    },
+    "sharon": {
+      "bio": "Sharon is a freelance product manager, tech nomad and an award-winning pan-Africanist who's been playing major roles in advancing the technology ecosystem in Sub-saharan Africa. She is passionate about technology as a tool for development. Sharon is currently building 2 SaaS/products that will catalyze economic development not just in Nigeria but the entire continent.",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "PH, Nigeria",
+      "featured": false,
+      "name": "Sharon Ud Georgewill",
+      "photo": "/images/people/sharon.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2FSharon.jpeg?alt=media&token=7e70730a-c788-4c44-b291-8264c36d76aa",
+      "shortBio": "",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/sharonudiy",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Product manager/UX advocate"
     }
   },
   "team" : [ {

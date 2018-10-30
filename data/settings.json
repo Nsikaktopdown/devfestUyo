@@ -133,11 +133,11 @@
     "pointer": {
       "latitude": 5.0116652,
       "longitude": 7.9167358,
-      "zoom": 10
+      "zoom": 11
     },
     "mapCenter": {
-      "latitude": 5.0116,
-      "longitude": 7.9167
+      "latitude": 5.0182473,
+      "longitude": 7.8831699
     },
     "description": "DevFest South South will take place in Uyo - the state capital of Akwa Ibom. Expect huge screens and perfect sound. Everything is set to deliver the best conference experience possible."
   },
