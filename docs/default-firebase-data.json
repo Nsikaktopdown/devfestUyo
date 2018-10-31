@@ -3,9 +3,9 @@
     "dfss18-announced" : {
       "backgroundColor" : "#2196F3",
       "brief" : "It is official. GDG DevFest South South 2018 is going to take place in Uyo, on November 16",
-      "content" : "It is official. GDG DevFest South South 2018 is going to take place in **Uyo, on November 16**.  Described by many as \"Google I/O of Ukraine\", DevFest has grown from the small 100-people event to the biggest Google tech conference in the Central and Eastern Europe. This year, we expect over 900 engineers, managers, and entrepreneurs from over 20 countries come to DevFest to learn about Android, Web and Cloud technologies, and to experience the phenomenal atmosphere.  ## What to expect?  **3 parallel Tracks and Workshops Area.** You asked, we did. We're building an additional stage and expanding Workshops Area to highlight even more topics and provide more hands-on time.  **Only experience based presentations.** Speakers from product companies like Google, Intel, Amazon, and Twilio. We take talk selection seriously. Our program committee carefully screens each and every submission.  **Expo Area.** Smart home, IoT, AR/VR devices, face emotions recognition using Google Cloud. Interested? With the help of GDG groups from all around Ukraine, DevFest is going to feature the biggest Expo Area on Google related devices and technologies.  **Unique networking and party.** Network with other like-minded industry colleagues and DevFest partners throughout the event and after-party.  <div layout horizontal center-justified> <a href=\"https://2event.com/events/800690\" rel=\"noopener noreferrer\">   <paper-button primary>Buy ticket</paper-button> </a> </div>   ## Stay in touch  We've already got first confirmations from speakers from Google, Twilio and Telerik. Subscribe to [DevFest newsletter](https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe) or follow us on [Facebook](https://www.facebook.com/devfest.ukraine/), [Twitter](https://twitter.com/devfest_ukraine) and [Instagram](https://www.instagram.com/devfestukraine) not to miss new speakers announcements and conference updates.   <span><i> We can't wait to meet you in Lviv, the rising tech capital of Ukraine.</br> GDG DevFest Ukraine Team. </i></span>",
+      "content" : "Google Developers Group, Uyo (GDGUyo) is set to host the biggest Community-run developers event of about 1000+ attendees in Uyo,  Akwa Ibom State, covering the South South Region with the theme, ‘’Digital WellBeing” After a successful edition of #DevFest17 hosted last year 2017 in the city of Aba, this year’s DevFest2018 returns, with the city of Uyo playing host as the Organizer. This year’s GDG DevFest South South Edition is geared at bringing together the world class experts in Android Programming, Web Development, Machine Learning/Artificial Intelligence, Augmented Reality/Virtual Reality and Cloud Technologies, under one roof for a 1-day of keynote Talks, breakout sessions, codelabs and product showcase. <br> GDG Uyo with the support of four GDGs from all around South-South Nigeria is the proud organizer of DevFest South South which is entirely support by Google. <br> This event will be open to Students, Graduates, Young School leavers, Designers, Software Engineers, Tech Enthusiasts, Entrepreneurs, Tech companies across South-South, Nigeria. <br> Attendees would gain insight into latest Google technology tools and futuristic innovations by Google, network with revered Tech experts in Africa during the event, have a one on one mentorship guide by Google Developers’ Experts, get opportunity to have a fire-chat session with the speakers and also stand a chance to be receive awesome Google branded swags at the event. <br> Above all, attendees will have the opportunity to pitch their product and brilliant ideas to potential investors who are ready to offer start-up supports to winners.<br> As avenue for employment opportunities, talented developers will have the chance to meet Engineering Managers from companies like Paystack who are currently recruiting Software Engineers. <br> Official Hashtag for the event are #DevFestSSUyo, #DevFest18  #GDGUyo",
       "image" : "/images/logos/gdg-uyo.svg",
-      "published" : "2018-09-06",
+      "published" : "2018-10-31",
       "source" : "/data/posts/2017-02-06-dfua17-announced.md",
       "title" : "Announcing GDG DevFest South South 2018"
     },
@@ -745,7 +745,7 @@
       "name": "Iam Etefia",
       "photo": "/images/people/iametefia.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2FEtefia.jpg?alt=media&token=5a5c46b9-0b90-4e77-8fa0-b4184b4c47db",
-      "shortBio": "",
+      "shortBio": "Business strategist, CEO at 36Zero||Community Manager at DigiClan Africa",
       "socials": [
         {
           "icon": "twitter",
@@ -765,7 +765,7 @@
       "name": "Sharon Ud Georgewill",
       "photo": "/images/people/sharon.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2FSharon.jpeg?alt=media&token=7e70730a-c788-4c44-b291-8264c36d76aa",
-      "shortBio": "",
+      "shortBio": "Product Manager || Tech Nomad",
       "socials": [
         {
           "icon": "twitter",
@@ -774,6 +774,24 @@
         }
       ],
       "title": "Product manager/UX advocate"
+    },
+    "samson_goddy": {
+      "bio": "Samson Goddy is a developer advocate for the Google open source project, working with Sugar Labs to create a free environment for kids to learn and currently building open source community Africa",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "PH, Nigeria",
+      "featured": false,
+      "name": "Samson Goddy",
+      "photo": "/images/people/sharon.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fsamson.jpeg?alt=media&token=817d95cb-092e-4ce4-bf0a-eb3c2ecb5ba7",
+      "shortBio": "Product Manager || Tech Nomad",
+      "socials": [{
+        "icon": "twitter",
+        "link": "https://twitter.com/samson_goddy",
+        "name": "Twitter"
+      }],
+      "title": "Developer / Board member at Sugar Labs, co-founder of Open Source Community Africa"
     }
   },
   "team" : [ {
