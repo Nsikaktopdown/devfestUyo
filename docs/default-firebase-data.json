@@ -132,21 +132,11 @@
         ],
         "startTime": "11:05"
       },{
-        "endTime": "11:45",
-        "sessions": [
-          {
-            "items": [
-              107
-            ]
-          }
-        ],
-        "startTime": "11:25"
-      },{
         "endTime": "12:05",
         "sessions": [
           {
             "items": [
-              108
+              107
             ]
           }
         ],
@@ -166,7 +156,7 @@
         "sessions": [
           {
             "items": [
-              110
+              116
             ]
           }
         ],
@@ -176,79 +166,106 @@
         "sessions": [
           {
             "items": [
-              111
+              117
             ]
           }
         ],
         "startTime": "12:45"
       },{
-        "endTime": "1:25",
+        "endTime": "1:35",
         "sessions": [
           {
             "items": [
-              112
+              137
             ]
           }
         ],
         "startTime": "1:05"
-      },{
-        "endTime": "1:45",
+      },
+      {
+        "endTime": "",
         "sessions": [
           {
             "items": [
-              113
+              111,
+              112
             ]
-          }
-        ],
-        "startTime": "1:25"
-      },{
-        "endTime" : "2:05",
-        "sessions" : [ {
-          "items" : [ 114 ]
-        } ],
-        "startTime" : "1:45"
-      },{
-        "endTime": "2:25",
-        "sessions": [
+          },
           {
+            "extend": 1,
             "items": [
-              115
-            ]
-          }
-        ],
-        "startTime": "2:05"
-      },{
-        "endTime": "2:55",
-        "sessions": [
-          {
-            "items": [
-              108
-            ]
-          }
-        ],
-        "startTime": "2:25"
-      },{
-        "endTime": "3:55",
-        "sessions": [
-          {
-            "items": [
-              
+              110
             ]
           },
           {
             "items": [
-              
+              113,
+              115
             ]
           }
         ],
-        "startTime": "2:55"
+        "startTime": "1:35"
+      },{
+        "endTime": "",
+        "sessions": [
+          {
+            "items": [
+              118,
+              119
+            ]
+          },
+          {
+            "items": [
+              114
+            ]
+          },
+          {
+            "extend": 1,          
+            "items": [
+              120
+            ]
+          }
+        ],
+        "startTime": ""
+      },
+      {
+        "endTime": "",
+        "sessions": [
+          {
+            "items": [
+              121
+            ]
+          }
+        ],
+        "startTime": ""
+      },
+      {
+        "endTime": "3:20",
+        "sessions": [
+          {
+            "items": [ 108 ]
+          }
+        ],
+        "startTime": "2:35"
+      },
+      {
+        "endTime": "4:05",
+        "sessions": [
+          {
+            "items": [ 122 ]
+          }
+        ],
+        "startTime": "3:20"
       },
       {
         "endTime" : "5:00",
         "sessions" : [ {
-          "items" : [  ]
-        } ],
-        "startTime" : "3:55"
+            "items": [
+              190
+            ]
+          } 
+      ],
+        "startTime" : "4:05"
       } ],
       "tracks" : [ {
         "title" : "Event hall"
@@ -261,18 +278,18 @@
   },
   "sessions" : {
     "101": {
-      "description": "Get your badge, coffee, enjoy talking with tech edicts around",
+      "description": "Get your badge and swag, enjoy talking with tech edicts around",
       "icon": "registration",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fregistration.jpg?alt=media&token=27328646-d323-4cca-904c-75f021bc3ffe",
-      "title": "Registration & morning Coffee"
+      "title": "Registration & Swag / Tags pickup "
     },
     "102": {
       "description": "Official start of the conference. Greetings from the organizers, sponsors and partners.",
       "icon": "opening",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fopening.jpg?alt=media&token=aa52dd45-50c9-4e36-9485-c1f9138ecd6b",
       "language": "English",
-      "speakers": ["nsikak_thompson" ],
-      "title": "GDG DevFest South South 2018 Opening"
+      "speakers": ["nsikak_thompson", "emem_brownson"],
+      "title": "GDG DevFest South South 2018 Opening and Announcement"
     },
     "103": {
       "description": "GDG impact in South South Nigeria",
@@ -281,32 +298,41 @@
       "speakers": ["nextdeegit"]
     },
     "104": {
-      "description": "Building and growing a large and diverse tech community",
+      "description": "Machine Learning kit for Android",
       "language": "English",
       "speakers": [  "aniediudo" ],
-      "title": "Keynote"
+      "title": "Keynote: Machine Learning kit for Android"
     },
-    "105" : {
-      "complexity" : "Beginner, Intermediate, Expert",
-      "description" : "The future of Machine Learning for everyone",
-      "language" : "English",
-      "presentation" : "",
-      "speakers" : [ "robert_john" ],
-      "tags" : [ "Machine Learning" ],
-      "title" : "The future of Machine Learning for everyone"
+    "105": {
+      "description": "Creating Cumulative Value as a Developer",
+      "language": "English",
+      "speakers": ["markessien"],
+      "title": "Creating Cumulative Value as a Developer"
     },
+    "116": {
+      "description": "Leading Technical Teams",
+      "language": "English",
+      "speakers": ["celestineomin"],
+      "title": "Keynote: Leading Technical Teams"
+    },  
+    "117": {
+      "description": "Design Handoff and working with Developers",
+      "language": "English",
+      "speakers": ["namnsoukpanah"],
+      "title": "Design Handoff and working with Developers"
+    },  
     "106" : {
       "complexity" : "Beginner, Intermediate, Expert",
-      "description": "Remember back when AJAX completely changed what was possible in the desktop web? Progressive web apps are that same fundamental shift for the mobile web. said Rahul Row-Chowdhury (Google’s product lead for chrome and the web platform) on stage at Google I/O 2016.- Progressive web apps use service workers, app shell, push notifications, RAIL and other capabilities to deliver an app-like user experience.",
+      "description": "",
       "language" : "English",
       "presentation" : "",
-      "speakers" : [ "prosper_otemuyiwa" ],
-      "tags" : [ "Web","PWA" ],
-      "title" : "Building a better web with PWA",
+      "speakers" : [ "unicodeveloper" ],
+      "tags": ["GraphQL", "Web"],
+      "title": "The GraphQL Way: Building Faster and Better Apps",
       "videoId" : ""
     },
     "107" : {
-      "complexity" : "Beginner",
+      "complexity": "Beginner, Intermediate",
       "description": "",
       "extend" : 2,
       "language" : "English",
@@ -325,43 +351,43 @@
       "description": "",
       "extend": 2,
       "language": "English",
-      "speakers": [ ],
-      "tags": [ "Machine Learning" ],
-      "title": "Machine Learning SDK for mobile developers"
+      "speakers": ["kolokodess", "samson_goddy"],
+      "tags": [ "Open Source" ],
+      "title": "Demystifying Open Source"
     },
     "110": {
       "complexity": "Beginner, Intermediate",
       "description": "",
       "language": "English",
-      "speakers": ["ememakpan"],
+      "speakers": ["ememakpan", "umekalu"],
       "tags": [  "Flutter", "Firebase"  ],
-      "title": "Code Beautiful UI with Flutter and Firebase"
+      "title": "Understanding The Concept of Flutter For Next Billion Mobile App Development"
     },
     "111": {
       "complexity": "Intermediate, Expert",
       "description": "",
       "extend": 2,
       "language": "English",
-      "speakers": ["judeebene"],
-      "tags": [ "AI", "TensorFlow"],
-      "title": "Tensorflow with Aws sage maker"
+      "speakers": ["auwalms_"],
+      "tags": [ "Web", "Mobile"],
+      "title": "Optimizing your WebApp Performance for your Mobile Visitors"
     },
     "112": {
-      "complexity": "Intermediate, Expert",
+      "complexity": "Beginner, Intermediate, Expert",
       "description": "",
       "extend": 2,
       "language": "English",
-      "speakers": [],
-      "tags": [ "Firebase" ],
-      "title": "Firebase Performance Monitoring and Test Lab"
+      "speakers": ["naco_john"],
+      "tags": [ "Web", "Angular" ],
+      "title": "Angular: building forms with Reactive Forms"
     },
     "113": {
-      "complexity": "Intermediate, Expert",
+      "complexity": "Beginner, Intermediate, Expert",
       "description": "",
       "language": "English",
-      "speakers": [ "samesidem","gino" ],
-      "tags": [  "Andriod"],
-      "title": "Android Jetpack: Android Architecture Components"
+      "speakers": ["OgieBen"],
+      "tags": ["Andriod","ML"],
+      "title": "Machine Learning on Android"
     },
     "114": {
       "complexity": "Beginner, Intermediate, Expert",
@@ -369,18 +395,62 @@
       "language": "English",
       "speakers": [ "emma_obot" ],
       "tags": [ "IOT"  ],
-      "title": "Home Automation with Android Things"
+      "title": "Android Things Weather Station"
     },
     "115": {
       "complexity": "Beginner, Intermediate",
       "description": "",
       "language": "English",
-      "speakers": [],
-      "tags": ["Assistant", "ML","Diaglow Flow"],
-      "title": "Building engaging Conversation for the Google Assistant using DialogFlow "
+      "speakers": ["akinrolie"],
+      "tags": ["Kotlin","Andriod"],
+      "title": "Kotlin(Android + Web) "
     },
-    "000" : {
-      "description" : "Make sure you won't miss closing ceremony, all gifts from out sponsors and partners will find their owners during this session.",
+    "118": {
+      "complexity": "Beginner, Intermediate, Expert",
+      "description": "",
+      "language": "English",
+      "speakers": ["nuckecy"],
+      "tags": ["UI/UX","Design","Web"],
+      "title": "Web for everyone & Anatomy of Design - UI & UX for everyone"
+    },
+    "119": {
+      "complexity": "Beginner, Intermediate, Expert",
+      "description": "",
+      "language": "English",
+      "speakers": ["perrie"],
+      "tags": ["Design", "UI/UX "],
+      "title": "Design with Inclusion."
+    },
+    "120": {
+      "complexity": "Beginner, Intermediate, Expert",
+      "description": "",
+      "language": "English",
+      "speakers": ["iametefia"],
+      "tags": ["Design", "UI/UX "],
+      "title": "Developing Business skills"
+    }, 
+    "121": {
+      "complexity": "Beginner, Intermediate, Expert",
+      "description": "",
+      "language": "English",
+      "speakers": ["theodoraisola"],
+      "tags": ["Product", "Management"],
+      "title": "Product Management: Conception to Launch"
+    },
+    "122": {
+      "description": "Panel Session",
+      "icon": "panel",
+      "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fparty.jpg?alt=media&token=8e413f01-373a-40bf-bb87-1dcf1d8e6af1",
+      "title": "Panel: Digital WellBeing"
+    },
+    "137": {
+      "description": "Now is a great time to have some fun and meet new people",
+      "icon": "party",
+      "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fparty.jpg?alt=media&token=8e413f01-373a-40bf-bb87-1dcf1d8e6af1",
+      "title": "Selfies & Networking"
+    },    
+    "190" : {
+      "description" : "Make sure you won't miss closing ceremony, all gifts from our sponsors and partners will find their owners during this session.",
       "icon" : "party",
       "image" : "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fparty.jpg?alt=media&token=8e413f01-373a-40bf-bb87-1dcf1d8e6af1",
       "title" : "Announcement & Networking & Photography"
@@ -785,14 +855,55 @@
       "name": "Samson Goddy",
       "photo": "/images/people/sharon.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fsamson.jpeg?alt=media&token=817d95cb-092e-4ce4-bf0a-eb3c2ecb5ba7",
-      "shortBio": "Product Manager || Tech Nomad",
+      "shortBio": "Developer at Sugar Labs || Co-Founder of Open Source Community Africa",
       "socials": [{
         "icon": "twitter",
         "link": "https://twitter.com/samson_goddy",
         "name": "Twitter"
       }],
       "title": "Developer / Board member at Sugar Labs, co-founder of Open Source Community Africa"
+    },
+    "emma_obot": {
+      "bio": "",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Uyo, Nigeria",
+      "featured": false,
+      "name": "Emma Obot",
+      "photo": "/images/people/iametefia.jpg",
+      "photoUrl": "https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-1/p160x160/36614427_10212247332919403_6920125227997331456_n.jpg?_nc_cat=108&_nc_eui2=AeH_LPrI6drtb-WqGAtRzKp13dVCWwUdRtml5cVBCGzG-6C-VneBQAnU9WmSnH1oFa7zWf5DthQDF6h48YH0FlpR4hgAo5jlRqpTKlvPO-l5eg&_nc_ht=scontent.flos2-1.fna&oh=0372493c56a4da9008ce3aa478730db0&oe=5C80A5B2",
+      "shortBio": "Head of Robotics at Start Innovation Hub",
+      "socials": [
+        {
+          "icon": "facebook",
+          "link": "https://facebook.com/emmanobot",
+          "name": "Facebook"
+        }
+      ],
+      "title": "Head of Robotics at Start Innovation Hub"
+    },
+    "ememakpan": {
+      "bio": "Google Certified Associate Android Developer & Technical Writer. I love Java, Kotlin, Flutter.",
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Uyo, Nigeria",
+      "featured": false,
+      "name": "Ememobong Akpanekpo",
+      "photo": "/images/people/iametefia.jpg",
+      "photoUrl": "https://pbs.twimg.com/profile_images/993086367142957056/NeNdFUc__400x400.jpg",
+      "shortBio": "Associate Android Developer & Technical Writer",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/emem_akpanekpo",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Android Developer"
     }
+
   },
   "team" : [ {
     "members" : [ {

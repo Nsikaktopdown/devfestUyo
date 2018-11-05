@@ -104,9 +104,9 @@
     "title": "What you need to know, before you ask.",
     "callToAction": {
       "featuredSessions": {
-        "description": "GDG DevFest South South brings together the world class experts in Android, Web and Cloud technologies to Uyo for a 1 day of sessions, workshops and showcases.",
+        "description": "Google Developers Group, Uyo (GDGUyo) is set to host the biggest Community-run developers event of about 1000+ attendees in Uyo, Akwa Ibom State, covering the South South Region with the theme, 'Digital WellBeing'",
         "label": "Learn More",
-        "link": "#"
+        "link": "/blog/posts/dfss18-announced/"
       },
       "howItWas": {
         "description": "Described by many as 'Google I/O of Aba', our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
