@@ -1,5 +1,14 @@
 {
   "blog" : {
+    "showcase": {
+      "backgroundColor": "#2196F3",
+      "brief": "",
+      "content": "",
+      "image": "/images/logos/gdg-uyo.svg",
+      "published": "2018-11-07",
+      "source": "/data/posts/2017-02-06-dfua17-announced.md",
+      "title": "Product Showcase GDG DevFest South South 2018"
+    },
     "dfss18-announced" : {
       "backgroundColor" : "#2196F3",
       "brief" : "It is official. GDG DevFest South South 2018 is going to take place in Uyo, on November 16",
@@ -222,7 +231,8 @@
           {
             "extend": 1,          
             "items": [
-              120
+              120,
+              141
             ]
           }
         ],
@@ -289,19 +299,19 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fopening.jpg?alt=media&token=aa52dd45-50c9-4e36-9485-c1f9138ecd6b",
       "language": "English",
       "speakers": ["nsikak_thompson", "emem_brownson"],
-      "title": "GDG DevFest South South 2018 Opening and Announcement"
+      "title": "Welcome Address and Announcement"
     },
     "103": {
-      "description": "GDG impact in South South Nigeria",
+      "description": "Building a Digital Wellbeing",
       "language": "English",
-      "title": "Motivation",
+      "title": "Motivation: Building a Digital Wellbeing",
       "speakers": ["nextdeegit"]
     },
     "104": {
       "description": "Machine Learning kit for Android",
       "language": "English",
       "speakers": [  "aniediudo" ],
-      "title": "Keynote: Machine Learning kit for Android"
+      "title": "Machine Learning kit for All"
     },
     "105": {
       "description": "Creating Cumulative Value as a Developer",
@@ -313,7 +323,7 @@
       "description": "Leading Technical Teams",
       "language": "English",
       "speakers": ["celestineomin"],
-      "title": "Keynote: Leading Technical Teams"
+      "title": "Leading Technical Teams"
     },  
     "117": {
       "description": "Design Handoff and working with Developers",
@@ -328,7 +338,7 @@
       "presentation" : "",
       "speakers" : [ "unicodeveloper" ],
       "tags": ["GraphQL", "Web"],
-      "title": "The GraphQL Way: Building Faster and Better Apps",
+      "title": "A TALE OF FOUR ENGINEERS: Imperfect people, High-level impact",
       "videoId" : ""
     },
     "107" : {
@@ -436,6 +446,18 @@
       "speakers": ["theodoraisola"],
       "tags": ["Product", "Management"],
       "title": "Product Management: Conception to Launch"
+    },
+    "141": {
+      "complexity": "Beginner, Intermediate, Expert",
+      "description": "",
+      "language": "English",
+      "speakers": [
+        "clarkson"
+      ],
+      "tags": [
+        "Assistant"
+      ],
+      "title": "Google Assistant"
     },
     "122": {
       "description": "Panel Session",
@@ -902,6 +924,25 @@
         }
       ],
       "title": "Android Developer"
+    },
+    "clarkson": {
+      "company": "",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Uyo, Nigeria",
+      "featured": false,
+      "name": "Aqua Clarkson Emmanuel",
+      "photo": "/images/people/iametefia.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fpeople%2Fclarkson.jpeg?alt=media&token=ab977dae-f4eb-4199-bc14-cd2133566b9b",
+      "shortBio": "I'm Clarkson an android developer with so much love for new tech",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/Clarksworld3",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Android developer, Tutor at start innovation hub"
     }
 
   },
@@ -957,7 +998,7 @@
   "tickets" : [  {
     "available" : true,
     "currency": "₦",
-    "ends": "Nov 01",
+    "ends": "Nov 10",
     "inDemand": true,
     "info": "Get Branded Jotter",
     "name": "STUDENT",
@@ -968,7 +1009,7 @@
   }, {
     "available": true,
     "currency": "₦",
-    "ends": "Nov 01",
+    "ends": "Nov 12",
     "inDemand": true,
     "info": "Get a Branded Tea Mug",
     "name": "Regular",
@@ -981,7 +1022,7 @@
   },{
     "available": true,
     "currency": "₦",
-    "ends": "Nov 01",
+    "ends": "Nov 14",
     "inDemand": true,
     "info": "Get Branded T-shirts",
     "name": "I Love DFSS",

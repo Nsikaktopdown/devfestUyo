@@ -47,6 +47,11 @@
       "route": "blog",
       "permalink": "/blog/",
       "label": "Blog"
+    },
+    {
+      "route": "showcase",
+      "permalink": "/blog/posts/showcase/",
+      "label": "Product Showcase"
     }
   ],
   "heroSettings": {
