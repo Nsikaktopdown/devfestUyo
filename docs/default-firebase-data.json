@@ -79,10 +79,6 @@
     "title" : "Organizer"
   }, {
     "logos" : [ {
-      "logoUrl" : "../images/logos/google.svg",
-      "name" : "Google",
-      "url" : "https://www.google.com.ng/intl/en/about/"
-    }, {
       "logoUrl" : "../images/logos/gdg-bonny.svg",
       "name" : "GDG Bonny",
       "url" : "#"
@@ -96,6 +92,23 @@
       "url" : "#"
     } ],
     "title" : "GDG Support"
+  }, {
+    "logos": [{
+        "logoUrl": "https://developers.google.com/_static/7f9cb1b981/images/redesign-14/lockup-color.png",
+        "name": "Google Developers",
+        "url": "https://developers.google.com/"
+      },{
+        "logoUrl": "https://starthub.com.ng/wp-content/uploads/2016/12/Start-Innovation-Hub-Logo.png",
+        "name": "Start Innovation Hub",
+        "url": "https://starthub.com.ng/"
+      },
+      {
+        "logoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fvanhack.jpeg?alt=media&token=7d6cb919-d6a4-4603-96d1-94e5ebc64b32",
+        "name": "Vanhack",
+        "url": "https://www.vanhack.com/"
+      }
+    ],
+    "title": "Sponsors"
   } ],
   "schedule" : {
     "2018-11-16" : {
@@ -121,13 +134,13 @@
       },{
         "endTime": "10:45",
         "sessions": [{
-            "items": [ 104 ]
+            "items": [ 105 ]
           }],
         "startTime": "10:25"
       },{
         "endTime": "11:05",
         "sessions": [{
-            "items": [ 105 ]
+            "items": [ 106 ]
           }],
         "startTime": "10:45"
       },{
@@ -135,7 +148,7 @@
         "sessions": [
           {
             "items": [
-              106
+              107
             ]
           }
         ],
@@ -145,7 +158,7 @@
         "sessions": [
           {
             "items": [
-              107
+              109
             ]
           }
         ],
@@ -155,7 +168,7 @@
         "sessions": [
           {
             "items": [
-              109
+              116
             ]
           }
         ],
@@ -165,7 +178,7 @@
         "sessions": [
           {
             "items": [
-              116
+              117
             ]
           }
         ],
@@ -175,7 +188,7 @@
         "sessions": [
           {
             "items": [
-              117
+              104
             ]
           }
         ],
@@ -311,7 +324,7 @@
       "description": "Machine Learning kit for Android",
       "language": "English",
       "speakers": [  "aniediudo" ],
-      "title": "Machine Learning kit for All"
+      "title": "The Era of Artificial Intelligence"
     },
     "105": {
       "description": "Creating Cumulative Value as a Developer",
@@ -421,7 +434,7 @@
       "language": "English",
       "speakers": ["nuckecy"],
       "tags": ["UI/UX","Design","Web"],
-      "title": "Web for everyone & Anatomy of Design - UI & UX for everyone"
+      "title": "Simple Steps to Great UX"
     },
     "119": {
       "complexity": "Beginner, Intermediate, Expert",
@@ -994,16 +1007,69 @@
       "title" : "Google Country Mentor"
     }],
     "title" : "Program Committee"
-  } ],
+  }, {
+    "members": [{
+      "name": "Andikan Usenmfon Affiah",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://gm1.ggpht.com/UwPjDClr1L-yz6J-RSxgq4Qdj8fwlVXO46Ey7BoxwcCws7vnxynf0ZvvxwafVAGEQtpXgcJS0lXjzMLxFIjPrE4lGaicNr3VIoJPxG-dYLP6fb0IZyKIaDhMiWT_gTKptzJx28koP3uzEJ9ypbadsH0Ok9xxqddunkQdaMIO8usNc_pd4cqBajvlP1aRtqOi49HGQdcl2ozQjCBRvqIW3YYWIxcsdjSrjGyasK8z3cfgEm1P35yOruzA1rtUaVGzeo160OYX0ADnD5xA580uZ3uHBrlaFDuKVFejaHiga9PArxjIiTkCKugAyHxYuCJvVN0oL_DW3O8PEBn8xSgk5YQ3YLdlh1uJw1Kek0qXCOsC6gPVSZeX7RP1LLdj8AiF407Jk8atFNzxeDrbB6Xv5Y9Od3grSOaVdfJ9D4Lb4ZjXd9l1gpZ2kOMCXh7u8pbFjJURGcDf2T3EfwGEyoKMD3dUaWYmMQ48Yy36yHQas-OTBI9yWwBvWa9fjGg7tEN9BPgTR3RugnAI5QodxxovtJxKxO01KYQpghQ4K515Pns4JQ31oAwuRErQFHE6Bv4UZmEuN_gqye7BRKfWHDfi_2Yo7jpq3uKqOzkjCIoG0XMGScOSlwZMD25Z1ITtNUSQFMeF7xwLadB5h6tIn0M7I3LzG1yVsYtwAmdWIa0dee92aqfmNLd8Jd3skBnyiodhExrQhM2mqd-hjtfWOdjCyHvG2KYqNZsBcME=s0-l75-ft-l75-ft",
+      "title": "Web Developer"
+    }, {
+      "name": "Emmanuel Michael Dynasty",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Ffacilitators%2FEmmanuel%20Michael%20Headshot%20photo.png?alt=media&token=83fa1437-77f8-4893-af04-8fb2a9dd230f",
+      "title": "Web Developer"
+    }, {
+      "name": "Oladokun Oluwasegun",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Ffacilitators%2FShegs%20Headshot.JPG?alt=media&token=9d9399e4-bb25-4ce7-b266-9357cfdfb389",
+      "title": "Android Developer"
+    }, {
+      "name": "Bassey, Samfield Hawb ",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Ffacilitators%2Fsamfield1.jpg?alt=media&token=f67a33df-0989-461c-baa8-4700f90f0bfe",
+      "title": "Android Developer"
+    }, {
+      "name": "Uzosike Lynda Adaku",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Ffacilitators%2Fuzosike%20adaku.jpg?alt=media&token=fc306dab-9a9f-4b42-8aff-042cc2cf1830",
+      "title": "Software Developer"
+    }, {
+      "name": "Amaizu Melody Onyedika",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Ffacilitators%2FAmaizu1.jpg?alt=media&token=65c3fa7b-c4fe-4629-9e0e-6e8e9ba71e1c",
+      "title": "Android Developer"
+    }, {
+      "name": "Princewill Edward",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://gm1.ggpht.com/IMB329hAxtsHE5S-0pJxMgl0UioWDCGJSGRZGfoHYyiCHtvCpwfvfQIetPEveNnvrs4fp72UdCHsXFcwprIltTOLAwyBpnBgGqnbr-_t-OkHz1vPS9WAYJGpOX3oXiwht0fbPhwhWmMIUZWv1iqCYYDOghXMB2WKY1d8_C6gYcxEwTkl3Bc3E9zfLYEo18Xl1k5XpHumYRZ3YGWNgwIr-mnNnEejCVvzRRQWZ8-_PrJ23dipo9fMyUqbuktIpj_ZZp6vxC2LMNax1AjMv5aPAFBG8xznJMfI8lh46caS7_-zKdpmo0DsSkFFOOa1kKo6x1-TxoJnaVb6E0YXQShZnFqw0kBT2q27Wtk2T1iwrwH4c5oCFeEz2slq7DgvixtojEcgvMKOTPVeCJ2kQBrdUDG3uwocP3ArrQqL4p1tE1h-BIFLmUQ_vzhyyJ7PFCIrM53QtwYnRwIsxoksZkz4ARL1zV5Zu75LjUL0UiHWMCIzSMDezu0QAXyMtX6i1jjKFFQoU2y-D4pVXykrp4CNO6puHCjF_GPcNYzFbbE7SFYB7aUBfF0OKZi8c4YX4EMpo-G0pUx_RcF-sJF9pjQDDYh9IwVdHIRUwEoYvs_LqqhrirL-WwcRoXSLYC-w7T-yLJE8E9EqYztZ599cFRyZLDL3NuN-NHgthFhE4BJxG_QYVpUTIkTjB3vOZUh3y4-RhqxvaK_UzU30oEGdrX-w1pNGTUX9lyIFjQ=s0-l75-ft-l75-ft",
+      "title": "Computer Engineer"
+    }, {
+      "name": "Emmanuel Alex Arthur",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://gm1.ggpht.com/FuYrGd1xSLzI5Si8u8h4sikU1Kugs1U602vRK7xcNOexQYRuFztLZOP7BDwzS4brGSqAznRkHzmLzSKsWfKe60Sa1Ke4zRCfW68W8Nx9zEP7YxP98uCpknX7xbKu0XUmPeSVW5XNJUenVUwOmu6W2xoAtNVCCHCzBhvoyvIx5TGuaB6cRyzpimQ42_2M1N__InzIxlSBmkz5iQR-ZDZi_rKX9a98xGMurcks2lcpxwe0o62Duj-UWq7r3PzIvnQwf4McD2lPy7ahCHsKfxnl43c6GVM4FJvixvRQZT2ElvTrL4eCzOrmr_CHPDYaPb_NAWH35f6szxYW5ZM51taV-lIZxPBQKUlGpqsPHvPeDrEbBUef_T5rkINKWHp9m_-SUxOnvgwyk41a7v1oVsLLqn_KOgQ2opOt350jhvyHU9bAdkcWtsvVis5Xy2sCiEH39CjysRYOhV9j6_rDmc3FvKwafV5AH9rYgO2DqNTCPRJoHNLPN_8x4-YmUe8-Q6oS6Il30d9oCgzYJwJHi7UGIbFaqvOPnnBtNCflJEpmWr8w_Jj-h2F8ihf_3ESqjhs7xR_6qf0HLNJvSJClTmrB3Yk6pomXuMD0ZOCHMSl1iBqX2m94YrbOrRbpQf2mVkzoml8fBeDz7AevFCSaJCTb8COct-oOJ-_rxWr7_5-SDUvUT4THz0BA_zlLjW_LTU-amZdW9pDASR-4Em_Km5kfSv4_N-PliQRjUcNumQ=s0-l75-ft-l75-ft",
+      "title": "Iot Developer"
+    }, {
+      "name": "Peace Bassey Nkanga",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://gm1.ggpht.com/gIDyK6pEE3-SZ2mBWlQjCSZec24Kclc1w68__v-uoui_rM52d6bqlb3gueUY7v43DG87mOYiPe_lIlrPbLjN5Xjtj4UwH4MwjRj0hpPryyrj14V6e_K7RRHqlN63hZhJlkNwHyDMCdTBYVZdm63YnXHe9I03f2kKvICPhAgKhs-aiI_kjy3XRvgwGD4o0eSVo5dDYvd0EjUXSLZjQtoLESS8PL4mdiIXKY-REKIQdeyuMOVMjhfGjzp934qUncOlmfHAb1OaeiutGxtzitDzKNf2Cu0BffY6TvUsjQgDngm9sbd4tnhP6b9xWBXQbZrHFOd3nLkYs19tjK4mCjIdZWLHkH3QhKRNNSfyGnaoDO_iAuys1prZw8_wAxjYyWXeOzZQn8DPo5esMX_dGR1OZaDFgw8DuwP6J4O9O47JJhUkKipOpJiC0bO1aMY_vCg2KVWtP7MMMap0ZsKtffxewuirtolYa6w1HIKRoY3_SaNivpVY8Reuw0UFtivhPc0vR76T4Ys2DsdTX2pnqOOf66WmocOqm0qyBYkf5TGippWi8XbOJbZa5peT387QfFMKg4c_CL2g4bxZWlvYcmataiHvPIoHk438xtd19PszoFDBs3fqaie8fVEF8ty_rnOKrejx_AYQWtzNnVvAEjKg8RoQQHoGtdm4FMaoUcwgCR0qZBYpz6U8I03HeGWytUCRj9ZkPLQiAtFg6GPBGVY-aGhlkoKeML-9lchXX_Ww=s0-l75-ft-l75-ft",
+      "title": "Iot Developer"
+    }, {
+      "name": "Etim, Utibe Sunday",
+      "photo": "/images/people/hanson_johnson.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Ffacilitators%2FEllipse%20(1).png?alt=media&token=46017434-983d-4963-bf30-232f890c9460",
+      "title": "Computer Technologist"
+    }],
+    "title": "Facilitators"
+  }],
   "tickets" : [  {
-    "available" : true,
+    "available" : false,
     "currency": "₦",
     "ends": "Nov 10",
     "inDemand": true,
     "info": "Get Branded Jotter",
     "name": "STUDENT",
     "price": "500",
-    "soldOut": false,
+    "soldOut": true,
     "starts": "Sep 15",
     "url": "/ticket/student"
   }, {
