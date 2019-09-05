@@ -172,10 +172,8 @@
            
           <a href="#ticket" rel="noopener noreferrer">
             <paper-button
-              on-tap="_scrollToTickets"
+              on-tap="_goToTicketsPage"
               ga-on="click"
-              ga-event-category="tickets"
-              ga-event-action="scroll"
               ga-event-label="hero block - scroll to tickets"
               primary invert
             >
@@ -202,7 +200,7 @@
     <about-organizer-block></about-organizer-block>
     <gallery-block></gallery-block>
     <featured-videos></featured-videos>
-    <latest-posts-block></latest-posts-block>
+    <blocklatest-posts-></latest-posts-block>
     <map-block></map-block>
     <partners-block></partners-block>
     <footer-block></footer-block>
@@ -242,6 +240,10 @@
         const ticketsBlockPositionY = HOVERBOARD.Elements.Tickets.getBoundingClientRect().top
           - toolbarHeight;
         this.scrollToY(ticketsBlockPositionY, 600, 'easeInOutSine');
+      }
+
+      _goToTicketsPage() {
+        window.open('https://www.meetup.com/GDG-Uyo/events/264368703/','_blank')
       }
 
       _scrollNextBlock() {

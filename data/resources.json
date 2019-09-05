@@ -1,9 +1,9 @@
 {
-  "title": "GDG DevFest South-South 2018",
-  "description": "Digital Wellbeing",
+  "title": "DevFest Uyo 2019",
+  "description": "DevFest Uyo 2019",
   "image": "images/social-share.jpg",
-  "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev, south",
-  "dates": "November 16, 2018",
+  "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev, uyo",
+  "dates": "November 16, 2019",
   "partnershipProposition": "#",
   "share": "Share",
   "followOur": "Follow our",
@@ -104,20 +104,20 @@
     "title": "What you need to know, before you ask.",
     "callToAction": {
       "featuredSessions": {
-        "description": "Google Developers Group, Uyo (GDGUyo) is set to host the biggest Community-run developers event of about 1000+ attendees in Uyo, Akwa Ibom State, covering the South South Region with the theme, 'Digital WellBeing'",
+        "description": "Google Developers Group, Uyo (GDGUyo) is set to host the biggest Community-run developers event of about 500+ attendees in Uyo, Akwa Ibom State. The event will focused on community building, software engineering and learning about Google’s technologies.'",
         "label": "Learn More",
         "link": "/blog/posts/dfss18-announced/"
       },
       "howItWas": {
-        "description": "Described by many as 'Google I/O of Aba', our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
-        "label": "See how it was in 2017",
+        "description": "Described by many as 'Largest tech event in south south Nigeria', our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
+        "label": "See how it was in 2018",
         "youtubeId": "#"
       }
     },
     "statisticsBlock": {
       "attendees": {
         "label": "Attendees",
-        "number": "1000"
+        "number": "500+"
       },
       "days": {
         "label": "Day",

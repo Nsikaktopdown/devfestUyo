@@ -29,7 +29,7 @@ const config = {
   },
   swPrecacheConfigPath: './sw-precache-config.js',
   templateData: [
-    `${getConfigPath()}`,
+   `${getConfigPath()}`,
     'data/settings',
     'data/resources',
   ],

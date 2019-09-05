@@ -1,21 +1,21 @@
 {
   "organizer": {
     "name": "GDG Uyo",
-    "twitter": "gdgsouth-south",
+    "twitter": "gdg_uyo",
     "blog": "https://medium.com/gdg-uyo",
     "url": "meetup.com/GDG-Uyo/"
   },
   "startDate": "2018-11-016T10:00:00+03:00",
   "endDate": "2018-11-16T19:00:00+04:00",
   "webapp": {
-    "shortName": "DevFestSS",
+    "shortName": "DevFestUyo",
     "themeColor": "#3F51B5",
     "backgroundColor": "#3F51B5"
   },
   "dateFormat": {
     "locale": "en-US"
   },
-  "hashtag": "DevFestSS",
+  "hashtag": "DevFestUyo",
   "disabledSchedule": false,
   "navigation": [
     {
@@ -56,7 +56,7 @@
   ],
   "heroSettings": {
     "home": {
-      "description": "Digital Wellbeing.",
+      "description": "DevFest Uyo 2019.",
       "background": {
         "color": "#354DB7",
         "image": "/images/backgrounds/home.jpg"
@@ -131,10 +131,10 @@
   },
   "location": {
     "label": "Location",
-    "name": "Je-nissi Event Center",
+    "name": "Ibom Elibrary Event Hall",
     "city": "Uyo",
     "short": "Akwa-Ibom, Nigeria",
-    "address": "Je-nissi events  7 Akpaube street off Babangida Avenue, Uyo.",
+    "address": "Ibom Elibrary Event Hall, Babangida Avenue, Uyo.",
     "pointer": {
       "latitude": 5.0116652,
       "longitude": 7.9167358,
@@ -144,7 +144,7 @@
       "latitude": 5.0182473,
       "longitude": 7.8831699
     },
-    "description": "DevFest South South will take place in Uyo - the state capital of Akwa Ibom. Expect huge screens and perfect sound. Everything is set to deliver the best conference experience possible."
+    "description": "DevFest will be happening in Uyo this season again. Expect huge screens and perfect sound. Everything is set to deliver the best conference experience possible."
   },
   "mediaQueries": {
     "xs": {
