@@ -37,14 +37,14 @@
     }
   },
   "gallery" : [
-    "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FGDG_4794.jpg?alt=media&token=b1b129cf-7465-49df-bd10-de8c5ab5cf7f",
-    "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FGDG_4799.jpg?alt=media&token=72f3370c-c5b9-4eeb-a185-efade6c2d864",
-    "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FGDG_4819.jpg?alt=media&token=6d92c9a3-0a36-4269-93f6-ffe252783204",
-    "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FGDG_4819.jpg?alt=media&token=6d92c9a3-0a36-4269-93f6-ffe252783204",
-    "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FGDG_4825.jpg?alt=media&token=f0434a36-69a9-441c-a212-da2fe5a0d7ec",
-    "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FGDG_4885.jpg?alt=media&token=84bde9b0-dee3-4268-8378-55f0366d6038",
-    "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FIMG_7737.JPG?alt=media&token=4ac98b0f-9972-42f5-81c2-46b3dc4cbd35",
-    "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fgallery%2FIMG_7804.JPG?alt=media&token=b0324bb0-de40-4da8-a173-1842436ed766"
+   "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/gallery%2FCALEB%20JOHNSON_2.jpg?alt=media&token=68fad6b6-cde1-45e6-b663-7ea4aff72958",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/gallery%2FCALEB%20JOHNSON_42.jpg?alt=media&token=d506beb9-f31c-45b0-8592-967dbfa93b09",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/gallery%2FCALEB%20JOHNSON_51.jpg?alt=media&token=73a4028d-80df-4d04-90f1-290765d52215",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/gallery%2FCALEB%20JOHNSON_72.jpg?alt=media&token=75557509-4bd5-46aa-b374-18dbd3a5da2d",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/gallery%2FCALEB%20JOHNSON_83.jpg?alt=media&token=9f610e4a-fa73-496b-be5a-c1267cf73852",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/gallery%2FCALEB%20JOHNSON_84.jpg?alt=media&token=2ab9b4fd-d984-44c3-bb3f-a108fe8c944d",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/gallery%2FCALEB%20JOHNSON_91.jpg?alt=media&token=3649143f-b17f-48d6-b6e5-af506bfcc6d5",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/gallery%2FIMG_0191.JPG?alt=media&token=163773cd-1342-4f39-ad5f-5a8e9ddbee9c"
   ],
   "swags": [
     "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fswags%2Fswag-1.png?alt=media&token=6cfd89f3-779e-417c-bcdb-560382ce3c25",
@@ -79,17 +79,7 @@
     "title" : "Organizer"
   }, {
     "logos" : [ {
-      "logoUrl" : "../images/logos/gdg-bonny.svg",
-      "name" : "GDG Bonny",
-      "url" : "#"
-    }, {
-      "logoUrl": "../images/logos/gdg-calabar.svg",
-      "name": "GDG Calabar",
-      "url": "#"
-    },{
-      "logoUrl" : "../images/logos/gdg-ph.svg",
-      "name" : "Google PH",
-      "url" : "#"
+      
     } ],
     "title" : "GDG Support"
   }, {
@@ -101,11 +91,6 @@
         "logoUrl": "https://starthub.com.ng/wp-content/uploads/2016/12/Start-Innovation-Hub-Logo.png",
         "name": "Start Innovation Hub",
         "url": "https://starthub.com.ng/"
-      },
-      {
-        "logoUrl": "https://firebasestorage.googleapis.com/v0/b/trend-76131.appspot.com/o/images%2Fvanhack.jpeg?alt=media&token=7d6cb919-d6a4-4603-96d1-94e5ebc64b32",
-        "name": "Vanhack",
-        "url": "https://www.vanhack.com/"
       }
     ],
     "title": "Sponsors"
@@ -566,6 +551,33 @@
         {
           "icon": "twitter",
           "link": "https://twitter.com/Didicodes/",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Software Engineer"
+    },
+    "oyewale": {
+      "badges": [
+        {
+          "description": "Software Engineer",
+          "link": "https://developers.google.com/groups/chapter/",
+          "name": "gdg"
+        }
+      ],
+      "bio": "Software Engineer at n26",
+      "company": "n26",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Berlin, Germany",
+      "featured": false,
+      "name": "Wale Oyediran",
+      "photo": "/images/people/wale.png",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/images%2Fpeople%2Fwale.png?alt=media&token=c6eaebdc-394c-4d23-b44e-67a922b59b77",
+      "shortBio": "Software Engineer at n26",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/waleoyediran",
           "name": "Twitter"
         }
       ],

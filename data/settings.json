@@ -34,25 +34,11 @@
       "label": "Attendees"
     },
     {
-      "route": "schedule",
-      "permalink": "/schedule/",
-      "label": "Schedule"
-    },
-    {
       "route": "team",
       "permalink": "/team/",
       "label": "Team"
-    },
-    {
-      "route": "blog",
-      "permalink": "/blog/",
-      "label": "Blog"
-    },
-    {
-      "route": "showcase",
-      "permalink": "/blog/posts/showcase/",
-      "label": "Product Showcase"
     }
+   
   ],
   "heroSettings": {
     "home": {
@@ -136,13 +122,13 @@
     "short": "Akwa-Ibom, Nigeria",
     "address": "Ibom Elibrary Event Hall, Babangida Avenue, Uyo.",
     "pointer": {
-      "latitude": 5.0116652,
-      "longitude": 7.9167358,
+      "latitude": 5.0152415,
+      "longitude": 7.9106595,
       "zoom": 11
     },
     "mapCenter": {
-      "latitude": 5.0182473,
-      "longitude": 7.8831699
+      "latitude": 5.0152415,
+      "longitude": 7.9106595
     },
     "description": "DevFest will be happening in Uyo this season again. Expect huge screens and perfect sound. Everything is set to deliver the best conference experience possible."
   },
