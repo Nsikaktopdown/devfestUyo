@@ -37,6 +37,11 @@
       "route": "team",
       "permalink": "/team/",
       "label": "Team"
+    },
+    {
+      "route": "sponsor",
+      "permalink": "https://drive.google.com/file/d/1FmYbSmZuAIOSS3v1AGhKhMvoBTK-8evd/view?usp=sharing",
+      "label": "Become a Sponsor"
     }
    
   ],
