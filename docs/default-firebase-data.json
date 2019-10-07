@@ -564,16 +564,16 @@
           "name": "gdg"
         }
       ],
-      "bio": "Software Engineer at n26",
+      "bio": "Senior Software Engineer at N26",
       "company": "n26",
       "companyLogo": "",
       "companyLogoUrl": "",
       "country": "Berlin, Germany",
       "featured": false,
       "name": "Wale Oyediran",
-      "photo": "/images/people/wale.png",
+      "photo": "/images/people/wale2.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/images%2Fpeople%2Fwale.png?alt=media&token=c6eaebdc-394c-4d23-b44e-67a922b59b77",
-      "shortBio": "Software Engineer at n26",
+      "shortBio": "Senior Software Engineer at N26",
       "socials": [
         {
           "icon": "twitter",
@@ -582,13 +582,67 @@
         }
       ],
       "title": "Software Engineer"
+    },
+    "ada": {
+      "badges": [
+        {
+          "description": "Software Engineer",
+          "link": "https://developers.google.com/groups/chapter/",
+          "name": "Google"
+        }
+      ],
+      "bio": "Founder, She Code Africa + Open Source Community Africa, \n Developer Ecosystem Community Manager, Sub-Saharan Africa, Google",
+      "company": "Google",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": false,
+      "name": "Ada Nduka Oyom",
+      "photo": "/images/people/Ada.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/images%2Fpeople%2FAda.jpg?alt=media&token=0b0ee2c5-4c8e-45c0-ba8b-aac81f43145c",
+      "shortBio": "Developer Ecosystem Community Manager, Sub-Saharan Africa, Google",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/Kolokodess",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Developer Ecosystem Community Manager, Sub-Saharan Africa, Google"
+    },
+    "francis": {
+      "badges": [
+        {
+          "description": "Co-founder The Roothub",
+          "link": "https://developers.google.com/groups/chapter/",
+          "name": ""
+        }
+      ],
+      "bio": "I presently co-run Roothub, a tech & business incubator located in Uyo, Akwa Ibom State Nigeria with a focus on leveraging technology in doing business. The innovation hub is a big player within the south-south region & in extension Nigeria in the digital, tech and knowledge economies that are so rapidly permeating every aspect of today’s society.",
+      "company": "The Roothub",
+      "companyLogo": "",
+      "companyLogoUrl": "",
+      "country": "Lagos, Nigeria",
+      "featured": false,
+      "name": "Francis Onuk",
+      "photo": "/images/people/francis_onuk.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/images%2Fpeople%2Ffrancis_onuk.jpg?alt=media&token=a276ee02-9507-4e3b-903d-ef388c1641e3",
+      "shortBio": "Co-founder The Roothub",
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "https://twitter.com/francisonuk",
+          "name": "Twitter"
+        }
+      ],
+      "title": "Visual Communicator"
     }
   },
   "team" : [ {
     "members" : [ {
-      "name" : "Nsikak Thomposon",
+      "name" : "Nsikak Thompson",
       "photo" : "/images/people/nsikak.jpg",
-      "photoUrl": "https://pbs.twimg.com/profile_images/1002946069054017536/WTh4NQcs_400x400.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/images%2Fpeople%2Fnsikak.jpeg?alt=media&token=0e449bb3-8748-4433-8175-4bbdbf7ed3e5",
       "socials" : [ {
         "icon" : "facebook",
         "link" : "https://www.facebook.com/#",
@@ -598,23 +652,23 @@
         "link" : "https://twitter.com/thompson_nsikak",
         "name" : "Twitter"
       }],
-      "title" : "General Organizer"
+      "title" : "Co-Organizer"
     },{
-      "name" : "Wisdom Anthony",
-      "photo" : "/images/people/wisdomanthoni.jpg",
-      "photoUrl" : "https://pbs.twimg.com/profile_images/906989089911648259/8rZ-G_ZH_400x400.jpg",
+      "name" : "Sam Esidem",
+      "photo" : "/images/people/sam.jpg",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-uyo.appspot.com/o/images%2Fpeople%2Fsam.jpg?alt=media&token=e25d6a56-c75b-4dca-abd8-c929ce333c60",
       "socials" : [ {
         "icon": "twitter",
-        "link": "https://twitter.com/wisdomanthoni",
+        "link": "https://twitter.com/Esidemsam",
         "name": "Twitter"
       },{
         "icon" : "facebook",
-        "link" : "https://www.facebook.com/wisdomanthoni",
+        "link" : "https://web.facebook.com/ESIDEM",
         "name" : "Facebook"
       } ],
-      "title" : "Website and Media"
+      "title" : "Co-Organizer"
     } ],
-    "title" : "Core Team"
+    "title" : "Co-Organizer"
   }, {
     "members" : [ {
       "name" : "Hanson Johnson",
